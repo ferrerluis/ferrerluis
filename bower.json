@@ -1,0 +1,22 @@
+{
+  "name": "ferrerluis",
+  "description": "",
+  "main": "",
+  "authors": [
+    "luis <ferrerluis97@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://ferrerluis.github.io/ferrerluis",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
