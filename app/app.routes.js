@@ -1,18 +1,19 @@
-angular.module('app', ['ngRoute'])
+ app.config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
+        $routeProvider
+            .when('/home', {
+                templateUrl: 'components/home/homeView.html',
+                controller: 'homeController',
+                controllerAs: 'home'
+            })
+            .when('/blog', {
+                templateUrl: 'components/blog/blog.html',
+                controller: 'blogController',
+                controllerAs: 'blog'
+            })
+            .otherwise({
+                redirectTo: '/home'
+            });
 
-    .config(['$routeProvider', '$locationProvider',
-        function($routeProvider, $locationProvider) {
-            $routeProvider
-                .when('/home', {
-                    templateUrl: 'components/home/homeView.html',
-                    controller: 'homeController',
-                    controllerAs: 'home'
-                })
-                .when('/blog', {
-                    templateUrl: 'components/blog/blog.html',
-                    controller: 'blogController',
-                    controllerAs: 'blog'
-                });
-
-            $locationProvider.html5Mode(true);
-        }])
+        $locationProvider.html5Mode(true);
+    }])

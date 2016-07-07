@@ -1,5 +1,15 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var server = require('gulp-server-livereload');
+ 
+gulp.task('serve', function() {
+  gulp.src('.')
+    .pipe(server({
+      livereload: true,
+      directoryListing: true,
+      open: true
+    }));
+});
 
 gulp.task('sass', function() {
 	gulp.src('assets/scss/**/*.scss')
@@ -8,6 +18,6 @@ gulp.task('sass', function() {
 });
 
 //Watch task
-gulp.task('default', function() {
+gulp.task('default', ['serve', 'sass'], function() {
 	gulp.watch('assets/scss/**/*.scss', ['sass']);
 });
