@@ -1,13 +1,13 @@
- app.config(['$routeProvider', '$locationProvider',
-    function($routeProvider, $locationProvider) {
+app.config(['$routeProvider',
+    function($routeProvider) {
         $routeProvider
             .when('/home', {
-                templateUrl: 'components/home/homeView.html',
+                templateUrl: 'app/components/home/homeView.html',
                 controller: 'homeController',
                 controllerAs: 'home'
             })
             .when('/blog', {
-                templateUrl: 'components/blog/blog.html',
+                templateUrl: 'app/components/blog/blogView.html',
                 controller: 'blogController',
                 controllerAs: 'blog'
             })
@@ -15,5 +15,12 @@
                 redirectTo: '/home'
             });
 
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
     }])
+
+// app.controller('homeController', function($scope, $log) {
+//
+//     $scope.message = 'This is the home screen';
+//
+//     $log.info("Got to home");
+// });

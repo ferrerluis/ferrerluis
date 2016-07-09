@@ -1,7 +1,9 @@
 /**
  * Created by luis on 7/6/16.
  */
-app.controller('blogController', function($scope) {
+// var app = angular.module('app');
+
+app.controller('blogController', function($scope, $log) {
 
     $scope.message = 'This is the blog screen';
 
