@@ -1,0 +1,20 @@
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# IDEs and editors
+/.idea
+
+# misc
+/.sass-cache
+/coverage/*
+npm-debug.log
+testem.log
+/typings
+
+#System Files
+.DS_Store
