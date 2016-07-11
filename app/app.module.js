@@ -17,8 +17,7 @@ app.controller("appController", ['$scope', '$location', '$log', function ($scope
     $scope.buttonActive = function(button) {
 
         var page = $location.path().replace("/", "");
-        var patt = new RegExp(page);
 
-        return patt.test(button);
+        return page === button;
     };
 }]);
