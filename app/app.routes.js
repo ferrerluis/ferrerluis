@@ -6,6 +6,16 @@ app.config(['$routeProvider',
                 controller: 'homeController',
                 controllerAs: 'home'
             })
+            .when('/coding', {
+                templateUrl: 'app/components/blog/blogView.html',
+                controller: 'blogController',
+                controllerAs: 'blog'
+            })
+            .when('/design', {
+                templateUrl: 'app/components/blog/blogView.html',
+                controller: 'blogController',
+                controllerAs: 'blog'
+            })
             .when('/blog', {
                 templateUrl: 'app/components/blog/blogView.html',
                 controller: 'blogController',

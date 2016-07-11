@@ -1,0 +1,278 @@
+///////// VARIABLES /////////
+
+$background-color: #202020;
+$logo-color: #FFFFFF;
+$logo-color-active: #AAAAAA;
+
+$title-color: #FFFFFF;
+$projects-bg: #EEEEEE;
+$projects-bg-color: #FFFFFF;
+
+$nav-text-color: #202020;
+$nav-text-color-active: #FFFFFF;
+$nav-options-bg: #FFFFFF;
+
+$button-bg: #FFFFFF;
+$coding-button-bg: #D85750;
+$design-button-bg: #67ABDE;
+$blog-button-bg: #FCB935;
+
+$social-button-bg: #FFFFFF;
+$social-button: #AAAAAA;
+$github-color: #161415;
+$linkedin-color: #2c7ab3;
+$twitter-color: #6cadde;
+$email-color: #FFFFFF;
+
+///////// SETUP /////////
+
+html, body {
+  background-color: $background-color;
+  height: 100%;
+  font-family: "Quicksand";
+}
+
+ng-view {
+
+  height: 100%;
+}
+
+.app-container {
+
+  padding: 3rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+
+  padding: 3rem 0;
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+
+  &.center {
+    justify-content: center;
+    text-align: center;
+  }
+
+  &.vertically-center {
+    align-items: center;
+  }
+}
+
+.main {
+
+  display: inline-block;
+}
+
+///////// NAVBAR /////////
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+
+  .hidden {
+
+    display: none;
+  }
+
+  .options {
+
+    height: 100%;
+    display: flex;
+
+    .button {
+      background-color: $nav-options-bg;
+      padding: 0.5rem 1rem;
+      margin-right: 1rem;
+
+      flex: 1;
+
+      &.active {
+        color: $nav-text-color-active;
+
+        &.coding {
+          background-color: $coding-button-bg;
+        }
+        &.design {
+          background-color: $design-button-bg;
+        }
+        &.blog {
+          background-color: $blog-button-bg;
+        }
+      }
+    }
+
+    .button:last-child {
+
+      margin-right: 0;
+    }
+  }
+}
+
+.logo {
+
+  display: inline-block;
+  color: $logo-color;
+  border: 0.2rem solid #FFF;
+  padding: 0.3rem 1rem 0.15rem 1rem;
+  margin: 0;
+
+  font-family: "Moon";
+  font-weight: lighter;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+
+    color: $logo-color-active;
+    border-color: $logo-color-active;
+  }
+
+  &.title {
+
+    margin-bottom: 3rem;
+    padding: 0.3rem 2rem;
+    padding: 0.3rem 2rem;
+
+    font-size: 5rem;
+  }
+}
+
+.pages {
+  display: flex;
+  margin-bottom: 4rem;
+
+  .button {
+
+    display: inline-block;
+
+    font-size: 2rem;
+
+    flex-grow: 1;
+    flex-basis: 30%;
+    padding: 0.5rem 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .button:last-child {
+
+    margin-right: 0;
+  }
+}
+
+.social {
+
+  display: flex;
+
+  .button {
+
+    font-size: 2.5rem;
+    color: $social-button;
+    background-color: transparent;
+
+    flex-grow: 1;
+    margin-right: 2rem;
+
+    &.github:hover {
+
+      color: $github-color;
+    }
+
+    &.linkedin:hover {
+
+      color: $linkedin-color;
+    }
+
+    &.twitter:hover {
+
+      color: $twitter-color;
+    }
+
+    &.email:hover {
+
+      color: $email-color;
+    }
+  }
+
+  .button:last-child {
+
+    margin-right: 0;
+  }
+}
+
+
+///////// TEMPLATE /////////
+
+.container {
+  flex-wrap: wrap;
+
+  &>.title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 4rem;
+    width: 100%;
+
+    color: $title-color;
+
+    margin-top: 0;
+  }
+}
+
+.projects-bg {
+
+  background-color: $projects-bg;
+  width: 150%;
+  height: 100%;
+
+  margin: 3rem -3rem -3rem -3rem;
+  padding-bottom: 50%;
+}
+
+.projects {
+  display: inline-block;
+
+  margin-top: -4rem;
+  padding: 2rem;
+
+  background-color: $projects-bg-color;
+
+  .project {
+
+    .title {
+
+      font-family: "Moon";
+    }
+  }
+}
+
+///////// BUTTONS /////////
+
+.button {
+
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $button-bg;
+  color: $nav-text-color;
+
+  &:hover {
+    color: $nav-text-color-active;
+
+    &.coding {
+      background-color: $coding-button-bg;
+    }
+    &.design {
+      background-color: $design-button-bg;
+    }
+    &.blog {
+      background-color: $blog-button-bg;
+    }
+  }
+}

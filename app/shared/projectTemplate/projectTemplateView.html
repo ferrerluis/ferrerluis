@@ -1,0 +1,16 @@
+<div class="container center vertically-center">
+
+    <h1 class="title">{{title}}</h1>
+
+    <div class="projects-bg">
+        <div class="projects">
+            <div class="project" ng-repeat="for project in projects">
+                <h2 class="title">{{project.title}}</h2>
+                <p class="description">{{project.description}}</p>
+            </div>
+            <div ng-show="noProjects()">
+                <p>No projects have been created yet.</p>
+            </div>
+        </div>
+    </div>
+</div>

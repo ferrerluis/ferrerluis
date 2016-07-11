@@ -1,0 +1,143 @@
+html, body {
+  background-color: #202020;
+  height: 100%;
+  font-family: "Quicksand"; }
+
+ng-view {
+  height: 100%; }
+
+.app-container {
+  padding: 3rem;
+  height: 100%;
+  box-sizing: border-box; }
+
+.container {
+  padding: 3rem 0;
+  display: flex;
+  box-sizing: border-box;
+  height: 100%; }
+  .container.center {
+    justify-content: center;
+    text-align: center; }
+  .container.vertically-center {
+    align-items: center; }
+
+.main {
+  display: inline-block; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem; }
+  .nav .hidden {
+    display: none; }
+  .nav .options {
+    height: 100%;
+    display: flex; }
+    .nav .options .button {
+      background-color: #FFFFFF;
+      padding: 0.5rem 1rem;
+      margin-right: 1rem;
+      flex: 1; }
+      .nav .options .button.active {
+        color: #FFFFFF; }
+        .nav .options .button.active.coding {
+          background-color: #D85750; }
+        .nav .options .button.active.design {
+          background-color: #67ABDE; }
+        .nav .options .button.active.blog {
+          background-color: #FCB935; }
+    .nav .options .button:last-child {
+      margin-right: 0; }
+
+.logo {
+  display: inline-block;
+  color: #FFFFFF;
+  border: 0.2rem solid #FFF;
+  padding: 0.3rem 1rem 0.15rem 1rem;
+  margin: 0;
+  font-family: "Moon";
+  font-weight: lighter;
+  transition: all 0.3s ease; }
+  .logo:hover {
+    color: #AAAAAA;
+    border-color: #AAAAAA; }
+  .logo.title {
+    margin-bottom: 3rem;
+    padding: 0.3rem 2rem;
+    padding: 0.3rem 2rem;
+    font-size: 5rem; }
+
+.pages {
+  display: flex;
+  margin-bottom: 4rem; }
+  .pages .button {
+    display: inline-block;
+    font-size: 2rem;
+    flex-grow: 1;
+    flex-basis: 30%;
+    padding: 0.5rem 1rem;
+    margin-right: 1.5rem; }
+  .pages .button:last-child {
+    margin-right: 0; }
+
+.social {
+  display: flex; }
+  .social .button {
+    font-size: 2.5rem;
+    color: #AAAAAA;
+    background-color: transparent;
+    flex-grow: 1;
+    margin-right: 2rem; }
+    .social .button.github:hover {
+      color: #161415; }
+    .social .button.linkedin:hover {
+      color: #2c7ab3; }
+    .social .button.twitter:hover {
+      color: #6cadde; }
+    .social .button.email:hover {
+      color: #FFFFFF; }
+  .social .button:last-child {
+    margin-right: 0; }
+
+.container {
+  flex-wrap: wrap; }
+  .container > .title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 4rem;
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 0; }
+
+.projects-bg {
+  background-color: #EEEEEE;
+  width: 150%;
+  height: 100%;
+  margin: 3rem -3rem -3rem -3rem;
+  padding-bottom: 50%; }
+
+.projects {
+  display: inline-block;
+  margin-top: -4rem;
+  padding: 2rem;
+  background-color: #FFFFFF; }
+  .projects .project .title {
+    font-family: "Moon"; }
+
+.button {
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  color: #202020; }
+  .button:hover {
+    color: #FFFFFF; }
+    .button:hover.coding {
+      background-color: #D85750; }
+    .button:hover.design {
+      background-color: #67ABDE; }
+    .button:hover.blog {
+      background-color: #FCB935; }

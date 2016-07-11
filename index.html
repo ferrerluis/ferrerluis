@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>FerrerLuis</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,6 +19,19 @@
 
 </head>
 <body ng-app="app">
-    <div ng-view></div>
+
+    <div class="app-container" ng-controller="appController">
+
+        <div class="nav" ng-hide="inHome()">
+            <a href="#/home"><h3 class="logo">Luis Ferrer</h3></a>
+            <div class="options">
+                <a href="#/coding" class="button coding">Coding</a>
+                <a href="#/design" class="button design">Design</a>
+                <a href="#/blog" class="button blog">Blog</a>
+            </div>
+        </div>
+        <div ng-view></div>
+    </div>
+
 </body>
 </html>
