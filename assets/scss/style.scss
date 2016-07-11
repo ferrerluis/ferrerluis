@@ -5,8 +5,8 @@ $logo-color: #FFFFFF;
 $logo-color-active: #AAAAAA;
 
 $title-color: #FFFFFF;
-$projects-bg: #EEEEEE;
-$projects-bg-color: #FFFFFF;
+$projects-wrapper: #EEEEEE;
+$projects-wrapper-color: #FFFFFF;
 
 $nav-text-color: #202020;
 $nav-text-color-active: #FFFFFF;
@@ -204,27 +204,28 @@ html, body {
 
 .container {
   flex-wrap: wrap;
-
+  
   &>.title {
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 4rem;
     width: 100%;
+    height: 4rem;
 
     color: $title-color;
 
-    margin-top: 0;
+    margin-top: 0rem;
   }
 }
 
-.projects-bg {
+.projects-wrapper {
 
-  background-color: $projects-bg;
-  width: 150%;
-  height: 65vh;
+  background-color: $projects-wrapper;
+  width: 100vw;
+  //height: 65vh;
 
   margin: 3rem -3rem -3rem -3rem;
-  //padding-bottom: 60vh;
+  //padding-bottom: 5rem;
 }
 
 .projects {
@@ -233,7 +234,7 @@ html, body {
   margin-top: -4rem;
   padding: 2rem;
 
-  background-color: $projects-bg-color;
+  background-color: $projects-wrapper-color;
 
   .project {
 

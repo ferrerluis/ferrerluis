@@ -8,6 +8,8 @@
     <title>FerrerLuis</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <script src="https://use.fortawesome.com/35f11794.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
@@ -23,7 +25,7 @@
 <body ng-app="app">
 
     <div class="app-container" ng-controller="appController">
-        <p style="background-color: #D85750; padding: 1rem; margin: -3rem -3rem 3rem -3rem; text-align: center; font-weight: bolder; color: #FFF;">Pardon my bugs & lack of content. This website is still under construction.</p>
+        <p style="background-color: #D85750; padding: 1rem; margin: -3rem -3rem 3rem -3rem; text-align: center; font-weight: bold; color: #FFF;">Pardon my bugs & lack of content. This website is still under construction. Mobile is not supported yet.</p>
 
         <div class="nav" ng-hide="inHome()">
             <a href="#/home"><h3 class="logo">Luis Ferrer</h3></a>
@@ -33,7 +35,7 @@
                 <a href="#/blog" ng-class="{active: buttonActive('blog')}" class="button blog">Blog</a>
             </div>
         </div>
-        <div ng-view style="height:100%"></div>
+        <div ng-view style="height:100%;"></div>
     </div>
 
 </body>
