@@ -1,11 +1,10 @@
 /**
  * Created by luis on 7/6/16.
  */
-// var app = angular.module('app');
 
-app.controller('blogController', function($scope, $log) {
+app.controller('designController', function($scope, $log) {
 
-    $scope.title = 'Blog';
+    $scope.title = 'Design';
 
     $scope.projects = [];
     

@@ -15,6 +15,8 @@
     <script src="app/app.module.js"></script>
     <script src="app/app.routes.js"></script>
     <script src="app/components/home/homeController.js"></script>
+    <script src="app/components/coding/codingController.js"></script>
+    <script src="app/components/design/designController.js"></script>
     <script src="app/components/blog/blogController.js"></script>
 
 </head>
@@ -25,12 +27,12 @@
         <div class="nav" ng-hide="inHome()">
             <a href="#/home"><h3 class="logo">Luis Ferrer</h3></a>
             <div class="options">
-                <a href="#/coding" class="button coding">Coding</a>
-                <a href="#/design" class="button design">Design</a>
-                <a href="#/blog" class="button blog">Blog</a>
+                <a href="#/coding" ng-class="{active: buttonActive('coding')}" class="button coding">Coding</a>
+                <a href="#/design" ng-class="{active: buttonActive('design')}" class="button design">Design</a>
+                <a href="#/blog" ng-class="{active: buttonActive('blog')}" class="button blog">Blog</a>
             </div>
         </div>
-        <div ng-view></div>
+        <div ng-view style="height:100%"></div>
     </div>
 
 </body>

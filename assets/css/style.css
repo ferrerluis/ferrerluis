@@ -3,9 +3,6 @@ html, body {
   height: 100%;
   font-family: "Quicksand"; }
 
-ng-view {
-  height: 100%; }
-
 .app-container {
   padding: 3rem;
   height: 100%;
@@ -114,9 +111,8 @@ ng-view {
 .projects-bg {
   background-color: #EEEEEE;
   width: 150%;
-  height: 100%;
-  margin: 3rem -3rem -3rem -3rem;
-  padding-bottom: 50%; }
+  height: 65vh;
+  margin: 3rem -3rem -3rem -3rem; }
 
 .projects {
   display: inline-block;

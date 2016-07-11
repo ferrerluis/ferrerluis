@@ -7,17 +7,17 @@ app.config(['$routeProvider',
                 controllerAs: 'home'
             })
             .when('/coding', {
-                templateUrl: 'app/components/blog/blogView.html',
-                controller: 'blogController',
+                templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
+                controller: 'codingController',
                 controllerAs: 'blog'
             })
             .when('/design', {
-                templateUrl: 'app/components/blog/blogView.html',
-                controller: 'blogController',
+                templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
+                controller: 'designController',
                 controllerAs: 'blog'
             })
             .when('/blog', {
-                templateUrl: 'app/components/blog/blogView.html',
+                templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
                 controller: 'blogController',
                 controllerAs: 'blog'
             })
