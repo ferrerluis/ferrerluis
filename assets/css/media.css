@@ -8,18 +8,23 @@
     display: inline-block; } }
 
 @media screen and (max-width: 650px) {
-  .logo.title {
-    font-size: 2.7rem;
-    padding: 0.3rem 0.5rem 0.05rem 0.5rem;
-    margin-bottom: 2rem; }
+  body {
+    font-size: 1.1rem; }
   .nav .options .button {
     width: 3rem; }
+  .logo.title {
+    font-size: 2.5rem;
+    padding: 0.3rem 0.5rem 0.05rem 0.5rem;
+    margin-bottom: 2rem; }
+  .main {
+    font-size: 3em; }
   .pages {
     flex-direction: column;
     margin-bottom: 2rem; }
     .pages .button {
       margin: 0.5rem 0;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      padding: 0.25rem 0.5rem; }
       .pages .button.coding {
         background-color: #D85750; }
       .pages .button.design {
@@ -28,4 +33,24 @@
         background-color: #FCB935; }
       .pages .button:hover {
         background-color: #FFFFFF;
-        color: #202020; } }
+        color: #202020; }
+  .social .button {
+    margin-right: 1rem; } }
+
+@media screen and (max-width: 350px) {
+  .logo.title {
+    font-size: 2rem; }
+  .logo.mobile {
+    padding: 0.25rem 0.5rem 0.15rem 0.5rem; }
+  .nav {
+    font-size: 1.2rem; }
+    .nav .options .button {
+      margin-right: 0.5rem;
+      padding: 0.5rem 0rem; }
+  .pages .button {
+    font-size: 1.75rem; }
+  .container > .title {
+    font-size: 3rem; }
+  .social .button {
+    margin-right: 1rem;
+    font-size: 2rem; } }

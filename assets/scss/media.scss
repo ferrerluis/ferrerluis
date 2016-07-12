@@ -33,12 +33,9 @@ $button-bg-active: #FFFFFF;
 
 @media screen and (max-width: 650px) {
 
-  .logo {
-    &.title {
-      font-size: 2.7rem;
-      padding: 0.3rem 0.5rem 0.05rem 0.5rem;
-      margin-bottom: 2rem;
-    }
+  body {
+
+    font-size: 1.1rem;
   }
 
   .nav {
@@ -50,6 +47,18 @@ $button-bg-active: #FFFFFF;
     }
   }
 
+  .logo {
+    &.title {
+      font-size: 2.5rem;
+      padding: 0.3rem 0.5rem 0.05rem 0.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .main {
+    font-size: 3em;
+  }
+
   .pages {
     flex-direction: column;
     margin-bottom: 2rem;
@@ -58,6 +67,7 @@ $button-bg-active: #FFFFFF;
 
       margin: 0.5rem 0;
       color: $button-text-color;
+      padding: 0.25rem 0.5rem;
 
       &.coding {
         background-color: $coding-button-bg;
@@ -74,6 +84,60 @@ $button-bg-active: #FFFFFF;
         background-color: $button-bg-active;
         color: $button-text-color-active;
       }
+    }
+  }
+
+  .social {
+    .button {
+      margin-right: 1rem;
+    }
+  }
+}
+
+///////// 4 INCH PHONES /////////
+
+@media screen and (max-width: 350px) {
+
+  .logo {
+    &.title {
+
+      font-size: 2rem;
+    }
+
+    &.mobile {
+      padding: 0.25rem 0.5rem 0.15rem 0.5rem;
+    }
+  }
+
+  .nav {
+    font-size: 1.2rem;
+
+    .options {
+      .button {
+
+        margin-right: 0.5rem;
+        padding: 0.5rem 0rem;
+      }
+    }
+  }
+
+  .pages {
+    .button {
+      font-size: 1.75rem;
+    }
+  }
+
+  .container {
+    & > .title {
+
+      font-size: 3rem;
+    }
+  }
+
+  .social {
+    .button {
+      margin-right: 1rem;
+      font-size: 2rem;
     }
   }
 }
