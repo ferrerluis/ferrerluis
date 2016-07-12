@@ -1,12 +1,19 @@
+.nav .logo.mobile {
+  display: none; }
+
 @media screen and (max-width: 750px) {
-  .nav .logo {
-    content: "LF"; } }
+  .nav > *:first-child {
+    display: none; }
+  .nav .logo.mobile {
+    display: inline-block; } }
 
 @media screen and (max-width: 650px) {
   .logo.title {
     font-size: 2.7rem;
     padding: 0.3rem 0.5rem 0.05rem 0.5rem;
     margin-bottom: 2rem; }
+  .nav .options .button {
+    width: 3rem; }
   .pages {
     flex-direction: column;
     margin-bottom: 2rem; }

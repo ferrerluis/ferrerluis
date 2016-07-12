@@ -1,9 +1,22 @@
+///////// BIG SCREENS /////////
+
+.nav {
+  .logo.mobile {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 750px) {
 
   .nav {
-    .logo {
 
-      content: "LF";
+    &>*:first-child {
+
+      display: none;
+    }
+
+    .logo.mobile {
+      display: inline-block;
     }
   }
 }
@@ -15,6 +28,15 @@
       font-size: 2.7rem;
       padding: 0.3rem 0.5rem 0.05rem 0.5rem;
       margin-bottom: 2rem;
+    }
+  }
+
+  .nav {
+    .options {
+      .button {
+
+        width: 3rem;
+      }
     }
   }
 
