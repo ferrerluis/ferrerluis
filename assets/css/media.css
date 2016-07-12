@@ -19,4 +19,13 @@
     margin-bottom: 2rem; }
     .pages .button {
       margin: 0.5rem 0;
-      flex: 1; } }
+      color: #FFFFFF; }
+      .pages .button.coding {
+        background-color: #D85750; }
+      .pages .button.design {
+        background-color: #67ABDE; }
+      .pages .button.blog {
+        background-color: #FCB935; }
+      .pages .button:hover {
+        background-color: #FFFFFF;
+        color: #202020; } }

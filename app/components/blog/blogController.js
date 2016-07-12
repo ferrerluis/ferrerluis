@@ -5,12 +5,15 @@
 
 app.controller('blogController', function($scope, $log) {
 
-    $scope.title = 'Blog';
+    $scope.page = {};
 
-    $scope.projects = [];
-    
+    $scope.page.title = 'Blog';
+    $scope.page.color = {'background-color': '#FCB935'};
+
+    $scope.page.projects = [];
+
     $scope.noProjects = function () {
-        
-        return $scope.projects.length == 0;
+
+        return $scope.page.projects.length == 0;
     };
 });

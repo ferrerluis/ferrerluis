@@ -4,12 +4,15 @@
 
 app.controller('codingController', function($scope, $log) {
 
-    $scope.title = 'Coding';
-
-    $scope.projects = [];
+    $scope.page = {};
     
+    $scope.page.title = 'Coding';
+    $scope.page.color = {'background-color': '#D85750'};
+
+    $scope.page.projects = [];
+
     $scope.noProjects = function () {
         
-        return $scope.projects.length == 0;
+        return $scope.page.projects.length == 0;
     };
 });

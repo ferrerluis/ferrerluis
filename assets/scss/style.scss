@@ -109,6 +109,8 @@ html, body {
   }
 }
 
+///////// LOGO /////////
+
 .logo {
 
   display: inline-block;
@@ -139,6 +141,8 @@ html, body {
   }
 }
 
+///////// HOME PAGES BUTTONS /////////
+
 .pages {
   display: flex;
   margin-bottom: 4rem;
@@ -160,6 +164,8 @@ html, body {
     margin-right: 0;
   }
 }
+
+///////// SOCIAL BUTTONS /////////
 
 .social {
 
@@ -236,7 +242,8 @@ html, body {
   margin-top: -4rem;
   padding: 2rem;
 
-  background-color: $projects-wrapper-color;
+  //background-color: $projects-wrapper-color;
+  color: $projects-wrapper-color;
 
   .project {
 

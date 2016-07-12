@@ -5,6 +5,6 @@
 
 app.controller('homeController', function($scope, $log) {
 
-    $scope.message = 'This is the home screen';
+    
 
 });

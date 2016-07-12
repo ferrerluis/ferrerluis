@@ -1,3 +1,13 @@
+///////// VARIABLES /////////
+
+$button-text-color: #FFFFFF;
+$coding-button-bg: #D85750;
+$design-button-bg: #67ABDE;
+$blog-button-bg: #FCB935;
+
+$button-text-color-active: #202020;
+$button-bg-active: #FFFFFF;
+
 ///////// BIG SCREENS /////////
 
 .nav {
@@ -47,7 +57,23 @@
     .button {
 
       margin: 0.5rem 0;
-      flex: 1;
+      color: $button-text-color;
+
+      &.coding {
+        background-color: $coding-button-bg;
+      }
+      &.design {
+        background-color: $design-button-bg;
+      }
+      &.blog {
+        background-color: $blog-button-bg;
+      }
+
+      &:hover {
+
+        background-color: $button-bg-active;
+        color: $button-text-color-active;
+      }
     }
   }
 }
