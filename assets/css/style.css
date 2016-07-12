@@ -101,7 +101,8 @@ html, body {
     margin-right: 0; }
 
 .container {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  height: 100%; }
   .container > .title {
     text-transform: uppercase;
     font-weight: lighter;
