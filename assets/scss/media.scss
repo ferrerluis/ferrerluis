@@ -1,4 +1,11 @@
-///////// VARIABLES /////////
+///////// SCREEN SIZES /////////
+
+$bigger-screen: 1500px;
+$medium-screen: 750px;
+$small-screen: 650px;
+$smaller-screen: 350px;
+
+///////// COLORS /////////
 
 $button-text-color: #FFFFFF;
 $coding-button-bg: #D85750;
@@ -8,49 +15,98 @@ $blog-button-bg: #FCB935;
 $button-text-color-active: #202020;
 $button-bg-active: #FFFFFF;
 
+///////// SIZES /////////
+
+$nav-button-width: 3rem;
+
+$bigger-nav-logo-width: 14rem;
+$bigger-nav-button-width: 12rem;
+
+$small-template-title-size: 3rem;
+
+///////// BIGGER SCREENS /////////
+
+@media screen and (min-width: $bigger-screen) {
+
+  .nav {
+    .logo {
+      text-align: center;
+      width: $bigger-nav-logo-width;
+    }
+
+    .options .button {
+      width: $bigger-nav-button-width;
+    }
+  }
+}
+
 ///////// BIG SCREENS /////////
 
 .nav {
+
   .logo.mobile {
     display: none;
   }
-}
 
-@media screen and (max-width: 750px) {
-
-  .nav {
-
-    &>*:first-child {
-
-      display: none;
-    }
-
-    .logo.mobile {
+  .options .button {
+    .big-option {
       display: inline-block;
     }
+    .small-option {
+      display: none;
+    }
   }
 }
 
-@media screen and (max-width: 650px) {
+///////// SMALLER SCREENS /////////
 
-  body {
+@media screen and (max-width: $medium-screen) {
 
-    font-size: 1.1rem;
+  .nav {
+    .logo {
+      display: none;
+    }
+    .logo.mobile {
+      display: inline-block;
+      //padding: 0.30rem 0.5rem 0.20rem 0.5rem;
+    }
+
+    .options .button {
+      .big-option {
+        display: none;
+      }
+      .small-option {
+        display: inline-block;
+
+        &.bold {
+
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+
+  .app-container {
+
+    padding: 2rem;
   }
 
   .nav {
-    .options {
-      .button {
+    .options .button {
 
-        width: 3rem;
-      }
+      width: 3rem;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
   .logo {
     &.title {
       font-size: 2.5rem;
-      padding: 0.3rem 0.5rem 0.05rem 0.5rem;
+      padding: 0.20rem 0.5rem 0.0335rem 0.5rem;
       margin-bottom: 2rem;
     }
   }
@@ -92,20 +148,21 @@ $button-bg-active: #FFFFFF;
       margin-right: 1rem;
     }
   }
+
+  .container .title {
+
+    font-size: $small-template-title-size;
+  }
 }
 
 ///////// 4 INCH PHONES /////////
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: $smaller-screen) {
 
   .logo {
     &.title {
 
       font-size: 2rem;
-    }
-
-    &.mobile {
-      padding: 0.25rem 0.5rem 0.15rem 0.5rem;
     }
   }
 

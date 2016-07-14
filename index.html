@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>FerrerLuis</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
     <script src="https://use.fortawesome.com/35f11794.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
@@ -28,15 +28,26 @@
         <!--<p style="background-color: #D85750; padding: 1rem; margin: -3rem -3rem 3rem -3rem; text-align: center; font-weight: bold; color: #FFF;">Pardon my bugs & lack of content. This website is still under construction. Mobile is not supported yet.</p>-->
 
         <div class="nav" ng-hide="inHome()">
-            <a href="#/home"><h3 class="logo">Luis Ferrer</h3></a>
-            <a href="#/home"><h3 class="logo mobile">LF</h3></a>
+            <a href="#/home">
+                <h3 class="logo">Luis Ferrer</h3>
+                <h3 class="logo mobile">LF</h3>
+            </a>
             <div class="options">
-                <a href="#/coding" ng-class="buttonActive('coding')" class="button coding">{{responsiveButton('Coding')}}</a>
-                <a href="#/design" ng-class="buttonActive('design')" class="button design">{{responsiveButton('Design')}}</a>
-                <a href="#/blog" ng-class="buttonActive('blog')" class="button blog">{{responsiveButton('Blog')}}</a>
+                <a href="#/coding" ng-class="buttonActive('coding')" class="button coding">
+                    <span class="big-option">Coding</span>
+                    <i class="bold small-option fa fa-code"></i>
+                </a>
+                <a href="#/design" ng-class="buttonActive('design')" class="button design">
+                    <span class="big-option">Design</span>
+                    <i class="small-option fa fa-paint-brush"></i>
+                </a>
+                <a href="#/blog" ng-class="buttonActive('blog')" class="button blog">
+                    <span class="big-option">Blog</span>
+                    <i class="small-option fa fa-quote-left"></i>
+                </a>
             </div>
         </div>
-        <div ng-view style="height:100%;"></div>
+        <div ng-view id="view"></div>
     </div>
 
 </body>

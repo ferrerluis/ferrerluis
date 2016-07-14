@@ -1,12 +1,12 @@
-///////// VARIABLES /////////
+///////// COLORS /////////
 
-$background-color: #202020;
+$body-background-color: #202020;
 $logo-color: #FFFFFF;
 $logo-color-active: #AAAAAA;
 
 $title-color: #FFFFFF;
-$projects-wrapper: #EEEEEE;
-$projects-wrapper-color: #FFFFFF;
+$projects-wrapper-bg: #EEEEEE;
+$projects-text-color: #FFFFFF;
 
 $nav-text-color: #202020;
 $nav-text-color-active: #FFFFFF;
@@ -24,27 +24,61 @@ $linkedin-color: #2c7ab3;
 $twitter-color: #6cadde;
 $email-color: #FFFFFF;
 
+///////// SIZES /////////
+
+$body-height: 100%;
+
+$app-padding: 3rem;
+$app-height: 100%;
+
+$nav-height: 10%;
+$nav-button-width: 8rem;
+
+$view-height: 90%;
+
+$container-padding: 3rem;
+
+$button-separation: 1rem;
+$button-internal-padding: 0.5rem 1rem;
+
+$projects-wrapper-margin: 6rem -3rem -3rem -3rem;
+
+$template-title-size: 4rem;
+
+///////// FONTS /////////
+
+$text-font: "Quicksand";
+$title-font: "Moon";
+
 ///////// SETUP /////////
 
 html, body {
-  background-color: $background-color;
-  height: 100%;
-  font-family: "Quicksand";
+  background-color: $body-background-color;
+  height: $body-height;
+  font-family: $text-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-weight: normal;
 }
 
 .app-container {
 
-  padding: 3rem;
-  height: 100%;
+  padding: $app-padding;
+  height: $app-height;
   box-sizing: border-box;
+}
+
+#view {
+
+  height: $view-height;
 }
 
 .container {
 
-  padding: 3rem 0;
-  display: flex;
+  padding: $container-padding 0;
   box-sizing: border-box;
-  height: 100%;
 
   &.center {
     justify-content: center;
@@ -52,6 +86,7 @@ html, body {
   }
 
   &.vertically-center {
+    height: 100%;
     align-items: center;
   }
 }
@@ -65,7 +100,7 @@ html, body {
 
 .nav {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   font-size: 1.5rem;
 
@@ -76,16 +111,16 @@ html, body {
 
   .options {
 
-    height: 100%;
     display: flex;
+    align-items: stretch;
 
     .button {
       background-color: $nav-options-bg;
-      padding: 0.5rem 1rem;
-      margin-right: 1rem;
+      padding: $button-internal-padding;
+      margin-right: $button-separation;
       text-align: center;
 
-      width: 8rem;
+      width: $nav-button-width;
 
       &.active {
         color: $nav-text-color-active;
@@ -119,7 +154,7 @@ html, body {
   padding: 0.3rem 1rem 0.15rem 1rem;
   margin: 0;
 
-  font-family: "Moon";
+  font-family: $title-font;
   font-weight: lighter;
 
   -webkit-transition: all 0.2s ease;
@@ -134,7 +169,6 @@ html, body {
   &.title {
 
     margin-bottom: 3rem;
-    padding: 0.3rem 2rem;
     padding: 0.3rem 2rem;
 
     font-size: 5rem;
@@ -211,15 +245,13 @@ html, body {
 ///////// TEMPLATE /////////
 
 .container {
+  display: flex;
   flex-wrap: wrap;
-  height: 100%;
 
   &>.title {
     text-transform: uppercase;
-    font-weight: lighter;
-    font-size: 4rem;
+    font-size: $template-title-size;
     width: 100%;
-    height: 4rem;
 
     color: $title-color;
 
@@ -229,22 +261,20 @@ html, body {
 
 .projects-wrapper {
 
-  background-color: $projects-wrapper;
-  width: 100vw;
-  //height: 65vh;
+  background-color: $projects-wrapper-bg;
+  min-width: 100vw;
+  min-height: 60vh;
 
-  margin: 3rem -3rem -3rem -3rem;
-  //padding-bottom: 5rem;
+  margin: $projects-wrapper-margin;
 }
 
 .projects {
   display: inline-block;
 
-  margin-top: -4rem;
+  margin-top: -5rem;
   padding: 2rem;
 
-  //background-color: $projects-wrapper-color;
-  color: $projects-wrapper-color;
+  color: $projects-text-color;
 
   .project {
 
