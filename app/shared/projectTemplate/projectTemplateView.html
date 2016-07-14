@@ -5,7 +5,7 @@
     <div class="projects-wrapper">
         <div class="projects" ng-style="page.color">
             <div class="project" ng-repeat="project in page.projects">
-                <h2 class="title">{{project.title}}</h2>
+                <a href="{{project.url}}"><h2 class="title">{{project.title}}</h2></a>
                 <p class="description">{{project.description}}</p>
             </div>
             <div ng-show="noProjects()">
