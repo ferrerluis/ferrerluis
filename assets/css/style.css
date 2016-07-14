@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box; }
 
 #view {
-  height: 90%; }
+  height: 100%; }
 
 .container {
   padding: 3rem 0;
@@ -122,11 +122,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects {
   display: inline-block;
+  max-width: 60rem;
+  box-sizing: border-box;
   margin-top: -5rem;
   padding: 2rem;
   color: #FFFFFF; }
-  .projects .project .title {
-    font-family: "Moon"; }
+  .projects .project {
+    width: 100%; }
+    .projects .project * {
+      width: 100%; }
+    .projects .project .title {
+      font-family: "Moon"; }
 
 .button {
   box-sizing: border-box;

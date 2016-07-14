@@ -60,7 +60,7 @@
   .container .title {
     font-size: 3rem; } }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
   .logo.title {
     font-size: 2rem; }
   .nav {

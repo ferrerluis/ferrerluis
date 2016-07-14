@@ -3,7 +3,7 @@
 $bigger-screen: 1500px;
 $medium-screen: 750px;
 $small-screen: 650px;
-$smaller-screen: 350px;
+$smaller-screen: 375px;
 
 ///////// COLORS /////////
 
@@ -23,6 +23,7 @@ $bigger-nav-logo-width: 14rem;
 $bigger-nav-button-width: 12rem;
 
 $small-template-title-size: 3rem;
+$small-app-container-margin: 2rem;
 
 ///////// BIGGER SCREENS /////////
 
@@ -68,7 +69,6 @@ $small-template-title-size: 3rem;
     }
     .logo.mobile {
       display: inline-block;
-      //padding: 0.30rem 0.5rem 0.20rem 0.5rem;
     }
 
     .options .button {
@@ -91,7 +91,7 @@ $small-template-title-size: 3rem;
 
   .app-container {
 
-    padding: 2rem;
+    padding: $small-app-container-margin;
   }
 
   .nav {
