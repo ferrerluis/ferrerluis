@@ -149,9 +149,13 @@ $small-app-container-margin: 2rem;
     }
   }
 
-  .container .title {
-
-    font-size: $small-template-title-size;
+  .container {
+    .title {
+      font-size: $small-template-title-size;
+    }
+    .projects-wrapper {
+      padding-bottom: 0;
+    }
   }
 }
 

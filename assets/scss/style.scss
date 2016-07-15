@@ -48,6 +48,7 @@ $button-separation: 1rem;
 $button-internal-padding: 0.5rem 1rem;
 
 $projects-wrapper-margin: 6rem -3rem -3rem -3rem;
+$projects-padding-bottom: 4rem;
 $project-padding: 1.5rem;
 
 
@@ -280,10 +281,12 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 60vh;
 
   margin: $projects-wrapper-margin;
+  padding-bottom: $projects-padding-bottom;
 }
 
 .projects {
   display: inline-block;
+  width: 100vw;
   max-width: 40rem;
   box-sizing: border-box;
 
@@ -316,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .empty {
     padding: $project-padding;
+    text-align: center;
   }
 }
 
