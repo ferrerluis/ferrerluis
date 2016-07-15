@@ -36,3 +36,10 @@ Array.prototype.exclude = function (callback) {
         return !callback(value);
     });
 };
+
+Array.prototype.containss = function (obj) {
+    if (this.indexOf(obj) !== -1) {
+        return true;
+    }
+    return false;
+};
