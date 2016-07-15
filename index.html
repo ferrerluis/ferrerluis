@@ -26,29 +26,34 @@
 </head>
 <body ng-app="app">
 
-    <div class="app-container" ng-controller="appController">
+    <div class="app-container" ng-class="shared.fullHeightAt(['/home'])" ng-controller="appController">
 
-        <div class="nav" ng-hide="inHome()">
+        <nav ng-hide="shared.isHome()">
             <a href="#/home">
                 <h3 class="logo">Luis Ferrer</h3>
                 <h3 class="logo mobile">LF</h3>
             </a>
             <div class="options">
-                <a href="#/coding" ng-class="buttonActive('coding')" class="button coding">
+                <a href="#/coding" ng-class="shared.buttonActive('coding')" class="button coding">
                     <span class="big-option">Coding</span>
                     <i class="bold small-option fa fa-code"></i>
                 </a>
-                <a href="#/design" ng-class="buttonActive('design')" class="button design">
+                <a href="#/design" ng-class="shared.buttonActive('design')" class="button design">
                     <span class="big-option">Design</span>
                     <i class="small-option fa fa-paint-brush"></i>
                 </a>
-                <a href="#/blog" ng-class="buttonActive('blog')" class="button blog">
+                <a href="#/blog" ng-class="shared.buttonActive('blog')" class="button blog">
                     <span class="big-option">Blog</span>
                     <i class="small-option fa fa-quote-left"></i>
                 </a>
             </div>
-        </div>
+        </nav>
+
         <div ng-view id="view"></div>
+
+        <footer>
+            Copyright © {{ shared.year }} Luis Ferrer Labarca
+        </footer>
 
     </div>
 

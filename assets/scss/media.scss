@@ -23,13 +23,16 @@ $bigger-nav-logo-width: 14rem;
 $bigger-nav-button-width: 12rem;
 
 $small-template-title-size: 3rem;
-$small-app-container-margin: 2rem;
+$small-app-container-padding: 2rem;
+
+$small-footer-padding: ($small-app-container-padding * 2) 0 $small-app-container-padding 0;
+$small-footer-padding-top: $small-app-container-padding;
 
 ///////// BIGGER SCREENS /////////
 
 @media screen and (min-width: $bigger-screen) {
 
-  .nav {
+  nav {
     .logo {
       text-align: center;
       width: $bigger-nav-logo-width;
@@ -43,7 +46,7 @@ $small-app-container-margin: 2rem;
 
 ///////// BIG SCREENS /////////
 
-.nav {
+nav {
 
   .logo.mobile {
     display: none;
@@ -63,7 +66,7 @@ $small-app-container-margin: 2rem;
 
 @media screen and (max-width: $medium-screen) {
 
-  .nav {
+  nav {
     .logo {
       display: none;
     }
@@ -91,10 +94,14 @@ $small-app-container-margin: 2rem;
 
   .app-container {
 
-    padding: $small-app-container-margin;
+    padding: $small-app-container-padding;
+
+    footer {
+      padding-top: $small-footer-padding-top;
+    }
   }
 
-  .nav {
+  nav {
     .options .button {
 
       width: 3rem;
@@ -157,6 +164,12 @@ $small-app-container-margin: 2rem;
       padding-bottom: 0;
     }
   }
+
+  .full-height {
+    footer:last-child {
+      padding: $small-footer-padding;
+    }
+  }
 }
 
 ///////// 4 INCH PHONES /////////
@@ -170,7 +183,7 @@ $small-app-container-margin: 2rem;
     }
   }
 
-  .nav {
+  nav {
     font-size: 1.2rem;
 
     .options {

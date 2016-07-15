@@ -1,35 +1,37 @@
 @media screen and (min-width: 1500px) {
-  .nav .logo {
+  nav .logo {
     text-align: center;
     width: 14rem; }
-  .nav .options .button {
+  nav .options .button {
     width: 12rem; } }
 
-.nav .logo.mobile {
+nav .logo.mobile {
   display: none; }
 
-.nav .options .button .big-option {
+nav .options .button .big-option {
   display: inline-block; }
 
-.nav .options .button .small-option {
+nav .options .button .small-option {
   display: none; }
 
 @media screen and (max-width: 750px) {
-  .nav .logo {
+  nav .logo {
     display: none; }
-  .nav .logo.mobile {
+  nav .logo.mobile {
     display: inline-block; }
-  .nav .options .button .big-option {
+  nav .options .button .big-option {
     display: none; }
-  .nav .options .button .small-option {
+  nav .options .button .small-option {
     display: inline-block; }
-    .nav .options .button .small-option.bold {
+    nav .options .button .small-option.bold {
       font-weight: 900; } }
 
 @media screen and (max-width: 650px) {
   .app-container {
     padding: 2rem; }
-  .nav .options .button {
+    .app-container footer {
+      padding-top: 2rem; }
+  nav .options .button {
     width: 3rem;
     padding-right: 0;
     padding-left: 0; }
@@ -60,14 +62,16 @@
   .container .title {
     font-size: 3rem; }
   .container .projects-wrapper {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .full-height footer:last-child {
+    padding: 4rem 0 2rem 0; } }
 
 @media screen and (max-width: 375px) {
   .logo.title {
     font-size: 2rem; }
-  .nav {
+  nav {
     font-size: 1.2rem; }
-    .nav .options .button {
+    nav .options .button {
       margin-right: 0.5rem;
       padding: 0.5rem 0rem; }
   .pages .button {

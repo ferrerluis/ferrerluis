@@ -7,16 +7,19 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
+.full-height {
+  height: 100%; }
+  .full-height footer:last-child {
+    padding: 6rem 0 3rem 0; }
+
 .app-container {
   padding: 3rem;
-  height: 100%;
   box-sizing: border-box; }
 
 #view {
   height: 100%; }
 
 .container {
-  padding: 3rem 0;
   box-sizing: border-box; }
   .container.center {
     justify-content: center;
@@ -28,31 +31,31 @@ h1, h2, h3, h4, h5, h6 {
 .main {
   display: inline-block; }
 
-.nav {
+nav {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   font-size: 1.5rem; }
-  .nav .hidden {
+  nav .hidden {
     display: none; }
-  .nav .options {
+  nav .options {
     display: flex;
     align-items: stretch; }
-    .nav .options .button {
+    nav .options .button {
       background-color: #FFFFFF;
       padding: 0.5rem 1rem;
       margin-right: 1rem;
       text-align: center;
       width: 8rem; }
-      .nav .options .button.active {
+      nav .options .button.active {
         color: #FFFFFF; }
-        .nav .options .button.active.coding {
+        nav .options .button.active.coding {
           background-color: #D85750; }
-        .nav .options .button.active.design {
+        nav .options .button.active.design {
           background-color: #67ABDE; }
-        .nav .options .button.active.blog {
+        nav .options .button.active.blog {
           background-color: #FCB935; }
-    .nav .options .button:last-child {
+    nav .options .button:last-child {
       margin-right: 0; }
 
 .logo {
@@ -113,13 +116,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4rem;
     width: 100%;
     color: #FFFFFF;
-    margin-top: 0rem; }
+    margin-top: 3rem; }
 
 .projects-wrapper {
   background-color: #EEEEEE;
   min-width: 100vw;
   min-height: 60vh;
-  margin: 6rem -3rem -3rem -3rem;
+  margin: 6rem -3rem 0 -3rem;
   padding-bottom: 4rem; }
 
 .projects {
@@ -184,3 +187,9 @@ h1, h2, h3, h4, h5, h6 {
       background-color: #67ABDE; }
     .button:hover.blog {
       background-color: #FCB935; }
+
+footer {
+  text-align: center;
+  padding-top: 3rem;
+  background-color: #202020;
+  color: #FFFFFF; }
