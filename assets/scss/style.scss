@@ -12,10 +12,17 @@ $nav-text-color: #202020;
 $nav-text-color-active: #FFFFFF;
 $nav-options-bg: #FFFFFF;
 
+$coding-color: #D85750;
+$coding-color-active: #c64e4b;
+$design-color: #67ABDE;
+$design-color-active: #57a9db;
+$blog-color: #FCB935;
+$blog-color-active: #f7ae28;
+
 $button-bg: #FFFFFF;
-$coding-button-bg: #D85750;
-$design-button-bg: #67ABDE;
-$blog-button-bg: #FCB935;
+$coding-button-bg: $coding-color;
+$design-button-bg: $design-color;
+$blog-button-bg: $design-color;
 
 $social-button-bg: #FFFFFF;
 $social-button: #AAAAAA;
@@ -41,13 +48,20 @@ $button-separation: 1rem;
 $button-internal-padding: 0.5rem 1rem;
 
 $projects-wrapper-margin: 6rem -3rem -3rem -3rem;
+$project-padding: 1.5rem;
 
-$template-title-size: 4rem;
 
 ///////// FONTS /////////
 
 $text-font: "Quicksand";
 $title-font: "Moon";
+
+$template-title-size: 4rem;
+
+$project-title-font: $title-font;
+$project-title-font-size: 1.3rem;
+$project-title-weight: bold;
+
 
 ///////// SETUP /////////
 
@@ -55,6 +69,7 @@ html, body {
   background-color: $body-background-color;
   height: $body-height;
   font-family: $text-font;
+  font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,10 +79,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .app-container {
 
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
-  //flex-wrap: wrap;
   padding: $app-padding;
   height: $app-height;
   box-sizing: border-box;
@@ -273,18 +284,69 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects {
   display: inline-block;
-  max-width: 60rem;
+  max-width: 40rem;
   box-sizing: border-box;
 
   margin-top: -5rem;
-  padding: 2rem;
 
+  text-align: left;
   color: $projects-text-color;
 
   .project {
+    padding: $project-padding;
+
+    a {
+      text-decoration: none;
+    }
     .title {
 
-      font-family: "Moon";
+      font-size: $project-title-font-size;
+      font-family: $title-font;
+      font-weight: $project-title-weight;
+      color: $title-color;
+
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+    .description {
+
+      margin: 0;
+    }
+  }
+
+  .empty {
+    padding: $project-padding;
+  }
+}
+
+///////// COLOR CLASSES /////////
+
+.color {
+  &-coding {
+    background-color: $coding-color;
+    &.active {
+      background-color: $coding-color-active;
+    }
+    .project:nth-child(even) {
+      background-color: $coding-color-active;
+    }
+  }
+  &-design {
+    background-color: $design-color;
+    &.active {
+      background-color: $design-color-active;
+    }
+    .project:nth-child(even) {
+      background-color: $design-color-active;
+    }
+  }
+  &-blog {
+    background-color: $blog-color;
+    &.active {
+      background-color: $blog-color-active;
+    }
+    .project:nth-child(even) {
+      background-color: $blog-color-active;
     }
   }
 }

@@ -1,7 +1,8 @@
 html, body {
   background-color: #202020;
   height: 100%;
-  font-family: "Quicksand"; }
+  font-family: "Quicksand";
+  font-size: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
@@ -50,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
         .nav .options .button.active.design {
           background-color: #67ABDE; }
         .nav .options .button.active.blog {
-          background-color: #FCB935; }
+          background-color: #67ABDE; }
     .nav .options .button:last-child {
       margin-right: 0; }
 
@@ -122,17 +123,47 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects {
   display: inline-block;
-  max-width: 60rem;
+  max-width: 40rem;
   box-sizing: border-box;
   margin-top: -5rem;
-  padding: 2rem;
+  text-align: left;
   color: #FFFFFF; }
   .projects .project {
-    width: 100%; }
-    .projects .project * {
-      width: 100%; }
+    padding: 1.5rem; }
+    .projects .project a {
+      text-decoration: none; }
     .projects .project .title {
-      font-family: "Moon"; }
+      font-size: 1.3rem;
+      font-family: "Moon";
+      font-weight: bold;
+      color: #FFFFFF;
+      margin: 0;
+      margin-bottom: 0.5rem; }
+    .projects .project .description {
+      margin: 0; }
+  .projects .empty {
+    padding: 1.5rem; }
+
+.color-coding {
+  background-color: #D85750; }
+  .color-coding.active {
+    background-color: #c64e4b; }
+  .color-coding .project:nth-child(even) {
+    background-color: #c64e4b; }
+
+.color-design {
+  background-color: #67ABDE; }
+  .color-design.active {
+    background-color: #57a9db; }
+  .color-design .project:nth-child(even) {
+    background-color: #57a9db; }
+
+.color-blog {
+  background-color: #FCB935; }
+  .color-blog.active {
+    background-color: #f7ae28; }
+  .color-blog .project:nth-child(even) {
+    background-color: #f7ae28; }
 
 .button {
   box-sizing: border-box;
@@ -149,4 +180,4 @@ h1, h2, h3, h4, h5, h6 {
     .button:hover.design {
       background-color: #67ABDE; }
     .button:hover.blog {
-      background-color: #FCB935; }
+      background-color: #67ABDE; }
