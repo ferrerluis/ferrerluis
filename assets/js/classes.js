@@ -5,7 +5,7 @@
 var Project = function (title, description, url, language) {
 
     this.title = title.replace("-", " ").capitalize();
-    this.description = description;
+    this.description = description.endWithPeriod();
     this.url = url;
     this.language = language;
 };
@@ -17,13 +17,15 @@ Project.all = function(http, callback) {
     http.get('https://api.github.com/users/ferrerluis/repos')
         .then(function successCallback(response) {
             data = response.data;
-            
+
             var i = 0;
             for (i; i < data.length; i++) {
-                var name = data[i]['name'];
-                var description = data[i]['description'];
-                var url = data[i]['html_url'];
-                var language = data[i]['language'];
+                var current = data[i];
+
+                var name = current['name'];
+                var description = current['description'];
+                var url = current['html_url'];
+                var language = current['language'];
 
                 projects.push(new Project(name, description, url, language));
             }

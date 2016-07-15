@@ -17,6 +17,22 @@ String.prototype.capitalizeAll = function () {
     return result;
 };
 
+String.prototype.endWithPeriod = function () {
+    var last = this.charAt(this.length - 1);
+
+    if (last.match(/\w/)) {
+        return this + ".";
+    }
+
+    return this + "";
+};
+
 Array.prototype.empty = function () {
     return this.length === 0;
+};
+
+Array.prototype.exclude = function (callback) {
+    return this.filter(function(value) {
+        return !callback(value);
+    });
 };
