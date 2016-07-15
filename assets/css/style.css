@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
         .nav .options .button.active.design {
           background-color: #67ABDE; }
         .nav .options .button.active.blog {
-          background-color: #67ABDE; }
+          background-color: #FCB935; }
     .nav .options .button:last-child {
       margin-right: 0; }
 
@@ -180,4 +180,4 @@ h1, h2, h3, h4, h5, h6 {
     .button:hover.design {
       background-color: #67ABDE; }
     .button:hover.blog {
-      background-color: #67ABDE; }
+      background-color: #FCB935; }
