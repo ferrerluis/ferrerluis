@@ -4,12 +4,7 @@
 
 app.controller('designController', function($scope, $log) {
 
-    $scope.page = {};
-
-    $scope.page.title = 'Design';
-    $scope.page.color = {'background-color': '#67ABDE'};
-
-    $scope.page.projects = [];
+    $scope.page = new Page('design');
 
     $scope.noProjects = function () {
 

@@ -3,17 +3,22 @@
  */
 // var app = angular.module('app');
 
-app.controller('blogController', function($scope, $log) {
+app.controller('blogController', function($scope, $log, $http) {
 
-    $scope.page = {};
+    // var Post = function () {
+    //     this.firstName = firstName;
+    //     console.log('Person instantiated');
+    // };
 
-    $scope.page.title = 'Blog';
-    $scope.page.color = {'background-color': '#FCB935'};
-
-    $scope.page.projects = [];
+    $scope.page = new Page('blog');
 
     $scope.noProjects = function () {
 
         return $scope.page.projects.length == 0;
     };
+
+    $http.get('https://api.github.com/users/ferrerluis')
+        .then(function successCallback(response) {
+
+        });
 });
