@@ -26,26 +26,7 @@
 </head>
 <body ng-app="app">
 
-<!--<style>-->
-    <!--#warning {-->
-        <!--background-color: #D85750;-->
-        <!--padding: 1rem;-->
-        <!--margin: -3rem -3rem 3rem -3rem;-->
-        <!--text-align: center;-->
-        <!--max-width: 100vw;-->
-        <!--font-weight: bold;-->
-        <!--color: #FFF;-->
-    <!--}-->
-
-    <!--@media screen and (max-width: 650px) {-->
-        <!--#warning {-->
-            <!--margin: -2rem -2rem 3rem -2rem;-->
-        <!--}-->
-    <!--}-->
-<!--</style>-->
-
     <div class="app-container" ng-controller="appController">
-        <!--<p id="warning">Pardon my bugs & lack of content. This website is still under construction.</p>-->
 
         <div class="nav" ng-hide="inHome()">
             <a href="#/home">
@@ -68,6 +49,7 @@
             </div>
         </div>
         <div ng-view id="view"></div>
+        
     </div>
 
 </body>
