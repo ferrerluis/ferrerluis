@@ -1,9 +1,21 @@
 var app = angular.module('app', ['ngRoute']);
 
-app.controller("appController", ['$scope', '$location', '$log', '$window', function ($scope, $location) {
+app.controller("appController", ['$scope', '$location', function ($scope, $location) {
 
+    $scope.shared = {};
 
-    $scope.inHome = function () {
+    $scope.shared.year = new Date().getFullYear();
+
+    $scope.shared.fullHeightAt = function(routes) {
+        // $log.debug($location.path() === routes[0]);
+        // $log.debug(routes[0]);
+
+        if (routes.containss($location.path())) {
+            return 'full-height';
+        }
+    };
+
+    $scope.shared.isHome = function () {
 
         if ($location.path() == '/home') {
 
@@ -13,7 +25,7 @@ app.controller("appController", ['$scope', '$location', '$log', '$window', funct
         return false;
     };
 
-    $scope.buttonActive = function(button) {
+    $scope.shared.buttonActive = function(button) {
 
         var page = $location.path().replace("/", "");
 
