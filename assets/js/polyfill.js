@@ -17,11 +17,11 @@ String.prototype.capitalizeAll = function () {
     return result;
 };
 
-String.prototype.endWithPeriod = function () {
+String.prototype.endWith = function (str) {
     var last = this.charAt(this.length - 1);
 
     if (last.match(/\w/)) {
-        return this + ".";
+        return this + str;
     }
 
     return this + "";
