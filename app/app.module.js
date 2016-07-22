@@ -10,7 +10,7 @@ app.controller("appController", ['$scope', '$location', function ($scope, $locat
         // $log.debug($location.path() === routes[0]);
         // $log.debug(routes[0]);
 
-        if (routes.containss($location.path())) {
+        if (routes.contains($location.path())) {
             return 'full-height';
         }
     };

@@ -37,7 +37,7 @@ Array.prototype.exclude = function (callback) {
     });
 };
 
-Array.prototype.containss = function (obj) {
+Array.prototype.contains = function (obj) {
     if (this.indexOf(obj) !== -1) {
         return true;
     }
