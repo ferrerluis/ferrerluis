@@ -2,21 +2,48 @@
  * Created by luis on 7/14/16.
  */
 
-var Project = function (title, description, url, language) {
+var Page = function (title, options) {
 
-    this.title = title.replace("-", " ").capitalize();
-    this.description = description.endWithPeriod();
+    options = options || {};
+    options['color'] = options.color || title;
+    options['url'] = options.url || ""
+
+    this.options = options
+
+    this.title = title.capitalize();
+    this.bgColor = "color-" + options.color + "-bg";
+    this.color = "color-" + options.color;
+    this.url = options.url;
+    this.projects = [];
+    this.posts = this.projects;
+}
+
+var Url = function (url, icon) {
+    
     this.url = url;
+    this.icon = 'fa fa-' + icon;
+}
+
+var Project = function (title, description, language, urls) {
+
+    this.title = title.replace(/[-_]/g, " ").capitalize();
+    this.description = description.endWith(".");
     this.language = language;
+    this.urls = urls || [];
+
+    this.addUrl = function (url) {
+        if (url.url !== "") {
+            this.urls.push(url);
+        }
+    }
 };
 
-Project.all = function(http, callback) {
-    var data;
+Project.all = function(http, page, callback) {
     var projects = [];
 
-    http.get('https://api.github.com/users/ferrerluis/repos')
+    http.get(page.url)
         .then(function successCallback(response) {
-            data = response.data;
+            var data = response.data;
 
             var i = 0;
             for (i; i < data.length; i++) {
@@ -24,10 +51,14 @@ Project.all = function(http, callback) {
 
                 var name = current['name'];
                 var description = current['description'];
-                var url = current['html_url'];
                 var language = current['language'];
+                var github = new Url(current['html_url'], 'github');
+                var home = new Url(current['homepage'], 'globe');
 
-                projects.push(new Project(name, description, url, language));
+                var project = new Project(name, description, language, [github]);
+                project.addUrl(home);
+
+                projects.push(project);
             }
 
             callback(projects);
@@ -37,9 +68,21 @@ Project.all = function(http, callback) {
         });
 };
 
-var Page = function (title, color) {
+var Post = function (title, excerpt, url) {
 
-    this.title = title.capitalize();
-    this.color = "color-" + (color || title);
-    this.projects = [];
+    this.title = title.replace("-", " ").capitalize();
+    this.excerpt = excerpt.endWith("...");
+    this.url = url;
+};
+
+Post.all = function (http, page, callback) {
+
+    var posts = [];
+
+    http.get(page.url)
+        .then(function successCallback(response) {
+            callback(posts);
+        }, function errorCallback(response) {
+            callback([]);
+        });
 }
