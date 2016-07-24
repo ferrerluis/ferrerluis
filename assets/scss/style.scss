@@ -42,8 +42,6 @@ $nav-button-width: 8rem;
 
 $view-height: 100%;
 
-//$container-padding: 3rem 0;
-
 $button-separation: 1rem;
 $button-internal-padding: 0.5rem 1rem;
 
@@ -66,6 +64,11 @@ $project-title-font: $title-font;
 $project-title-font-size: 1.3rem;
 $project-title-weight: bold;
 
+$project-language-font-size: $project-title-font-size - 0.2rem;
+
+///////// TRANSITIONS /////////
+
+$transition-time: 0.3s;
 
 ///////// SETUP /////////
 
@@ -181,7 +184,7 @@ nav {
   font-weight: lighter;
 
   -webkit-transition: all 0.2s ease;
-  transition: all 0.3s ease;
+  transition: all $transition-time ease;
 
   &:hover {
 
@@ -309,17 +312,41 @@ nav {
     a {
       text-decoration: none;
     }
-    .title {
 
-      font-size: $project-title-font-size;
-      font-family: $title-font;
-      font-weight: $project-title-weight;
-      color: $title-color;
-
-      margin: 0;
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 0.5rem;
+      //transition: all $transition-time ease;
+
+      &-details {
+        &>* {
+          display: inline-block;
+          margin: 0;
+          margin-right: 0.5rem;
+        }
+        &-title {
+          font-size: $project-title-font-size;
+          font-family: $title-font;
+          font-weight: $project-title-weight;
+          color: $title-color;
+        }
+        &-language {
+          font-size: $project-language-font-size;
+          color: $projects-text-color;
+        }
+        &-link {
+          color: $projects-text-color;
+          font-size: 1.7rem;
+          transition: all $transition-time ease;
+          &:hover {
+            color: $body-background-color;
+          }
+        }
+      }
     }
-    .description {
+    &-description {
 
       margin: 0;
     }
@@ -335,30 +362,48 @@ nav {
 
 .color {
   &-coding {
-    background-color: $coding-color;
-    &.active {
-      background-color: $coding-color-active;
+    color: $coding-color;
+    &-bg {
+      background-color: $coding-color;
+      .project:nth-child(even) {
+        background-color: $coding-color-active;
+      }
     }
-    .project:nth-child(even) {
-      background-color: $coding-color-active;
+    &.active {
+      color: $coding-color-active;
+      &-bg {
+        background-color: $coding-color-active;
+      }
     }
   }
   &-design {
-    background-color: $design-color;
-    &.active {
-      background-color: $design-color-active;
+    color: $design-color;
+    &-bg {
+      background-color: $design-color;
+      .project:nth-child(even) {
+        background-color: $design-color-active;
+      }
     }
-    .project:nth-child(even) {
-      background-color: $design-color-active;
+    &.active {
+      color: $design-color-active;
+      &-bg {
+        background-color: $design-color-active;
+      }
     }
   }
   &-blog {
-    background-color: $blog-color;
-    &.active {
-      background-color: $blog-color-active;
+    color: $blog-color;
+    &-bg {
+      background-color: $blog-color;
+      .project:nth-child(even) {
+        background-color: $blog-color-active;
+      }
     }
-    .project:nth-child(even) {
-      background-color: $blog-color-active;
+    &.active {
+      color: $blog-color-active;
+      &-bg {
+        background-color: $blog-color-active;
+      }
     }
   }
 }
