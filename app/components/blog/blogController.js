@@ -10,15 +10,17 @@ app.controller('blogController', function($scope, $log, $http) {
     //     console.log('Person instantiated');
     // };
 
-    $scope.page = new Page('blog');
+    $scope.page = new Page('blog', {
+        url: "https://api.github.com/repos/ferrerluis/blog/contents",
+        itemName: 'post'
+    });
 
     $scope.noProjects = function () {
 
         return $scope.page.projects.length == 0;
     };
 
-    $http.get('https://api.github.com/users/ferrerluis')
-        .then(function successCallback(response) {
-
-        });
+    Post.all($http, $scope.page, function (posts) {
+        $scope.page.posts = posts;
+    });
 });

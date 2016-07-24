@@ -4,11 +4,14 @@
 
 app.controller('codingController', function($scope, $http, $log) {
 
-    $scope.page = new Page('coding');
+    $scope.page = new Page('coding', {
+        url: 'https://api.github.com/users/ferrerluis/repos',
+        itemName: 'project'
+    });
 
-    Project.all($http, function (projects) {
+    Project.all($http, $scope.page, function (projects) {
         $scope.page.projects = projects.exclude(function (value) {
-            return value.url === "https://github.com/ferrerluis/blog";
+            return value.title === "Blog";
         });
     });
 

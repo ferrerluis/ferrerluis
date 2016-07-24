@@ -4,7 +4,7 @@
 
 app.controller('designController', function($scope, $log) {
 
-    $scope.page = new Page('design');
+    $scope.page = new Page('design', {'itemName': 'design'});
 
     $scope.noProjects = function () {
 
