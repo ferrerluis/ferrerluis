@@ -32,7 +32,7 @@ var Project = function (title, description, language, urls) {
     this.urls = urls || [];
 
     this.addUrl = function (url) {
-        if (url.url !== "") {
+        if (url.url !== "" && url.url !== null) {
             this.urls.push(url);
         }
     }
