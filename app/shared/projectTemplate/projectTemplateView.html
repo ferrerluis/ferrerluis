@@ -3,13 +3,19 @@
     <h1 class="title">{{page.title}}</h1>
 
     <div class="projects-wrapper">
-        <div class="projects" ng-class="page.color">
+        <div class="projects" ng-class="page.bgColor">
             <div class="project" ng-repeat="project in page.projects">
-                <a href="{{project.url}}"><h2 class="title">{{project.title}}</h2></a>
-                <p class="description">{{project.description}}</p>
+                <div class="project-info">
+                    <div class="project-info-details">
+                        <h2 class="project-info-details-title" style="display: inline-block">{{project.title}}</h2>
+                        <p class="project-info-details-language">({{project.language}})</p>
+                        <a class="project-info-details-link" ng-repeat="url in project.urls" href="{{url.url}}"><i ng-class="url.icon"></i></a>
+                    </div>
+                </div>
+                <p class="project-description">{{project.description}}</p>
             </div>
             <div class="empty" ng-show="page.projects.empty()">
-                <p>No projects have been created yet.</p>
+                <p>No {{page.options.itemName}}s have been created yet.</p>
             </div>
         </div>
     </div>
