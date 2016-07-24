@@ -49,6 +49,8 @@ $projects-wrapper-margin: 6rem -3rem 0 -3rem;
 $projects-wrapper-padding-bottom: 4rem;
 $project-padding: 1.5rem;
 
+$project-link-icon-size: 1.7rem;
+
 $footer-padding: ($app-padding * 2) 0 $app-padding 0;
 
 ///////// FONTS /////////
@@ -337,11 +339,11 @@ nav {
           color: $projects-text-color;
         }
         &-link {
-          color: $projects-text-color;
-          font-size: 1.7rem;
+          color: $body-background-color;
+          font-size: $project-link-icon-size;
           transition: all $transition-time ease;
           &:hover {
-            color: $body-background-color;
+            color: $projects-text-color;
           }
         }
       }

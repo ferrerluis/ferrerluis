@@ -155,11 +155,11 @@ nav {
         font-size: 1.1rem;
         color: #FFFFFF; }
       .projects .project-info-details-link {
-        color: #FFFFFF;
+        color: #202020;
         font-size: 1.7rem;
         transition: all 0.3s ease; }
         .projects .project-info-details-link:hover {
-          color: #202020; }
+          color: #FFFFFF; }
     .projects .project-description {
       margin: 0; }
   .projects .empty {
