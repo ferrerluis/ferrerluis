@@ -1,0 +1,83 @@
+@media screen and (min-width: 1500px) {
+  nav .logo {
+    text-align: center;
+    width: 14rem; }
+  nav .options .button {
+    width: 12rem; } }
+
+nav .logo.mobile {
+  display: none; }
+
+nav .options .button .big-option {
+  display: inline-block; }
+
+nav .options .button .small-option {
+  display: none; }
+
+@media screen and (max-width: 750px) {
+  nav .logo {
+    display: none; }
+  nav .logo.mobile {
+    display: inline-block; }
+  nav .options .button .big-option {
+    display: none; }
+  nav .options .button .small-option {
+    display: inline-block; }
+    nav .options .button .small-option.bold {
+      font-weight: 900; } }
+
+@media screen and (max-width: 650px) {
+  .app-container {
+    padding: 2rem; }
+    .app-container footer {
+      padding-top: 2rem; }
+  nav .options .button {
+    width: 3rem;
+    padding-right: 0;
+    padding-left: 0; }
+  .logo.title {
+    font-size: 2.5rem;
+    padding: 0.20rem 0.5rem 0.0335rem 0.5rem;
+    margin-bottom: 2rem; }
+  .main {
+    font-size: 3em; }
+  .pages {
+    flex-direction: column;
+    margin-bottom: 2rem; }
+    .pages .button {
+      margin: 0.5rem 0;
+      color: #FFFFFF;
+      padding: 0.25rem 0.5rem; }
+      .pages .button.coding {
+        background-color: #D85750; }
+      .pages .button.design {
+        background-color: #67ABDE; }
+      .pages .button.blog {
+        background-color: #FCB935; }
+      .pages .button:hover {
+        background-color: #FFFFFF;
+        color: #202020; }
+  .social .button {
+    margin-right: 1rem; }
+  .container .title {
+    font-size: 3rem; }
+  .container .projects-wrapper {
+    padding-bottom: 0; }
+  .full-height footer:last-child {
+    padding: 4rem 0 2rem 0; } }
+
+@media screen and (max-width: 375px) {
+  .logo.title {
+    font-size: 2rem; }
+  nav {
+    font-size: 1.2rem; }
+    nav .options .button {
+      margin-right: 0.5rem;
+      padding: 0.5rem 0rem; }
+  .pages .button {
+    font-size: 1.75rem; }
+  .container > .title {
+    font-size: 3rem; }
+  .social .button {
+    margin-right: 1rem;
+    font-size: 2rem; } }
