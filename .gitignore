@@ -16,5 +16,8 @@ npm-debug.log
 testem.log
 /typings
 
-#System Files
+# System Files
 .DS_Store
+
+# dev
+Dockerfile
