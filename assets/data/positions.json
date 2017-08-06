@@ -1,8 +1,64 @@
 [
-    {
-        "title": "Site Reliability Engineering Intern",
-        "company": "MailChimp",
-        "dates": "May 2017 - Present",
-        "website": "https://mailchimp.com"
-    }
+  {
+    "title":"Site Reliability Engineering Intern",
+    "company":"MailChimp",
+    "dates":"May 2017 – Present",
+    "description":null,
+    "website":"https://mailchimp.com"
+  },
+  {
+    "title":"IT Specialist",
+    "company":"Georgia State University",
+    "dates":"Jan 2015 – Present",
+    "description":"Removing and installing operating systems. Data management. Virtual machines' configuration. Basic network maintenance and hardware troubleshooting. Bash and Python scripting for automatizing customer-service-related processes.",
+    "website":"https://gsu.edu"
+  },
+  {
+    "title":"Software Engineering Intern",
+    "company":"Rigor",
+    "dates":"Aug 2016 – May 2017",
+    "description":"Monitoring app team. Agile environment. JIRA for managing sprints. Ruby on Rails app. Unit testing & BDD. Continuous Integration/Delivery. Git & Github. Githooks. Code reviewing. QAing new features. Refactoring code. Full-stack: Ruby, JS, HTML, CSS. Implementing new feature-flagged features. Operations. Deployment processes. Feature planning.",
+    "website":"https://rigor.com"
+  },
+  {
+    "title":"Chief Technology Officer & Co-founder",
+    "company":"PantherHackers",
+    "dates":"Aug 2015 – May 2017",
+    "description":"Helping organize and teach workshops. Helping organize hackathons. Gather and execute innovative ideas from our members. Bringing in more technologies to boost our performance. Setting up emails. Creating/maintaining our website. Managing our current technologies (Slack, LinkedIn, Zoho, Trello, etc). Helping develop the first Makerspace at GSU, which will be the main hub for PantherHackers.",
+    "website":"http://pantherhackers.com"
+  },
+  {
+    "title":"Head of Ops and Tech & Co-founder",
+    "company":"uPet.io",
+    "dates":"Oct 2016 – Feb 2017",
+    "description":""
+  },
+  {
+    "title":"Web Development Intern",
+    "company":"First Data Corporation",
+    "dates":"Jun 2016 – Aug 2016",
+    "description":"Working on hiring tools to speed up interviewing processes within the company. Managing the development of the product from its early stages. Running agile weekly sprint sessions. Studying targeted audience, functional requirements, and user interaction. Developing software and database architecture. Carrying out web design, back-end development, testing and documenting.",
+    "website":"https://www.firstdata.com"
+  },
+  {
+    "title":"Technology Trainer",
+    "company":"Georgia State University",
+    "dates":"Oct 2015 – May 2016",
+    "description":"Responsible for preparing and teaching the HTML and CSS workshop series. Responsible for developing the first Intro to Programming workshop for non-CS majors. Working towards developing a Unix & Bash workshop. Working in a team for coming up with new ideas to better engage students on IT topics.",
+    "website":"https://gsu.edu"
+  },
+  {
+    "title":"Vice President & Co-founder",
+    "company":"PantherHackers",
+    "dates":"Jul 2015 – Aug 2015",
+    "description":"Attending weekly meetings. Effectively communicating with members of the board. Steering PantherHackers towards its mission. Planning and executing big events (including the first hackathon at Georgia State University, CEOHacks). Overall influencing members and other students to think out of the box and do greater things!",
+    "website":"http://pantherhackers.com"
+  },
+  {
+    "title":"Brain & Behavior Scholar",
+    "company":"Georgia State University",
+    "dates":"May 2015 – Aug 2015",
+    "description":"Developing functional programs in Python. Handling large amounts of data. Doing text parsing and further processing the data. Using machine-learning algorithms to predict labels for a multi-label problem. Generating open source and reusable code.",
+    "website":"https://gsu.edu"
+  }
 ]
