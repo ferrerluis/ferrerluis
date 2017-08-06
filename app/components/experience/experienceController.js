@@ -2,9 +2,9 @@
  * Created by luis on 7/6/16.
  */
 
-app.controller('designController', function($scope, $log) {
+app.controller('experienceController', function($scope, $log) {
 
-    $scope.page = new Page('design', {'itemName': 'design'});
+    $scope.page = new Page('experience', {'itemName': 'position'});
 
     $scope.noProjects = function () {
 

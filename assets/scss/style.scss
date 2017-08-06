@@ -14,14 +14,14 @@ $nav-options-bg: #FFFFFF;
 
 $coding-color: #D85750;
 $coding-color-active: #c64e4b;
-$design-color: #67ABDE;
-$design-color-active: #57a9db;
+$experience-color: #67ABDE;
+$experience-color-active: #57a9db;
 $blog-color: #FCB935;
 $blog-color-active: #f7ae28;
 
 $button-bg: #FFFFFF;
 $coding-button-bg: $coding-color;
-$design-button-bg: $design-color;
+$experience-button-bg: $experience-color;
 $blog-button-bg: $blog-color;
 
 $social-button-bg: #FFFFFF;
@@ -156,8 +156,8 @@ nav {
         &.coding {
           background-color: $coding-button-bg;
         }
-        &.design {
-          background-color: $design-button-bg;
+        &.experience {
+          background-color: $experience-button-bg;
         }
         &.blog {
           background-color: $blog-button-bg;
@@ -378,18 +378,18 @@ nav {
       }
     }
   }
-  &-design {
-    color: $design-color;
+  &-experience {
+    color: $experience-color;
     &-bg {
-      background-color: $design-color;
+      background-color: $experience-color;
       .project:nth-child(even) {
-        background-color: $design-color-active;
+        background-color: $experience-color-active;
       }
     }
     &.active {
-      color: $design-color-active;
+      color: $experience-color-active;
       &-bg {
-        background-color: $design-color-active;
+        background-color: $experience-color-active;
       }
     }
   }
@@ -431,8 +431,8 @@ nav {
     &.coding {
       background-color: $coding-button-bg;
     }
-    &.design {
-      background-color: $design-button-bg;
+    &.experience {
+      background-color: $experience-button-bg;
     }
     &.blog {
       background-color: $blog-button-bg;

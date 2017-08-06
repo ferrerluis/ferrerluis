@@ -9,7 +9,7 @@ $smaller-screen: 375px;
 
 $button-text-color: #FFFFFF;
 $coding-button-bg: #D85750;
-$design-button-bg: #67ABDE;
+$experience-button-bg: #67ABDE;
 $blog-button-bg: #FCB935;
 
 $button-text-color-active: #202020;
@@ -135,8 +135,8 @@ nav {
       &.coding {
         background-color: $coding-button-bg;
       }
-      &.design {
-        background-color: $design-button-bg;
+      &.experience {
+        background-color: $experience-button-bg;
       }
       &.blog {
         background-color: $blog-button-bg;
