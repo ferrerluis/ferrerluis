@@ -6,15 +6,16 @@ var Page = function (title, options) {
 
     options = options || {};
     options['color'] = options.color || title;
-    options['url'] = options.url || ""
+    options['url'] = options.url || ''
 
     this.options = options
 
     this.title = title.capitalize();
-    this.bgColor = "color-" + options.color + "-bg";
-    this.color = "color-" + options.color;
+    this.bgColor = 'color-' + options.color + '-bg';
+    this.color = 'color-' + options.color;
     this.url = options.url;
     this.projects = [];
+    this.positions = [];
     this.posts = this.projects;
 }
 
@@ -26,13 +27,13 @@ var Url = function (url, icon) {
 
 var Project = function (title, description, language, urls) {
 
-    this.title = title.replace(/[-_]/g, " ").capitalize();
-    this.description = description.endWith(".");
+    this.title = title.replace(/[-_]/g, ' ').capitalize();
+    this.description = description.endWith('.');
     this.language = language;
     this.urls = urls || [];
 
     this.addUrl = function (url) {
-        if (url.url !== "" && url.url !== null) {
+        if (url.url !== '' && url.url !== null) {
             this.urls.push(url);
         }
     }
@@ -70,8 +71,8 @@ Project.all = function(http, page, callback) {
 
 var Post = function (title, excerpt, url) {
 
-    this.title = title.replace("-", " ").capitalize();
-    this.excerpt = excerpt.endWith("...");
+    this.title = title.replace('-', ' ').capitalize();
+    this.excerpt = excerpt.endWith('...');
     this.url = url;
 };
 
@@ -82,6 +83,39 @@ Post.all = function (http, page, callback) {
     http.get(page.url)
         .then(function successCallback(response) {
             callback(posts);
+        }, function errorCallback(response) {
+            callback([]);
+        });
+}
+
+var Position = function (title, company, dates, description, website) {
+    this.title = title;
+    this.company = company;
+    this.dates = dates;
+    this.description = description || '';
+    this.website = website || '';
+}
+
+Position.all = function (http, page, callback) {
+
+    var positions = [];
+
+    http.get(page.url)
+        .then(function successCallback(response) {
+            var items = response.data;
+
+            items.forEach(function (item) {
+
+                var title = item['title'];
+                var company = item['company'];
+                var dates = item['dates'];
+                var description = item['description'];
+                var website = item['website'];
+
+                positions.push(new Position(title, company, dates, description, website));
+            });
+
+            callback(positions);
         }, function errorCallback(response) {
             callback([]);
         });

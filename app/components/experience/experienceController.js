@@ -2,12 +2,14 @@
  * Created by luis on 7/6/16.
  */
 
-app.controller('experienceController', function($scope, $log) {
+app.controller('experienceController', function($scope, $http, $log) {
 
-    $scope.page = new Page('experience', {'itemName': 'position'});
+    $scope.page = new Page('experience', {
+    	itemName: 'position',
+    	url: 'assets/data/positions.json'
+    });
 
-    $scope.noProjects = function () {
-
-        return $scope.page.projects.length == 0;
-    };
+    Position.all($http, $scope.page, function (positions) {
+        $scope.page.positions = positions;
+    });
 });
