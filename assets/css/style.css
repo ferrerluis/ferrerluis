@@ -160,6 +160,18 @@ nav {
         transition: all 0.3s ease; }
         .items .item-info-details-link:hover {
           color: #FFFFFF; }
+      .items .item-info-details-dates {
+        display: block;
+        font-size: 1.1rem;
+        color: #FFFFFF; }
+      .items .item-info-details-company {
+        font-size: 1.3rem;
+        color: #FFFFFF;
+        margin: 0;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease; }
+        .items .item-info-details-company:hover {
+          border-bottom: 2px solid #FFFFFF; }
     .items .item-description {
       margin: 0; }
   .items .empty {

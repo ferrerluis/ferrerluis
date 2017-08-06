@@ -68,6 +68,8 @@ $item-title-weight: bold;
 
 $item-language-font-size: $item-title-font-size - 0.2rem;
 
+$underline-width: 2px;
+
 ///////// TRANSITIONS /////////
 
 $transition-time: 0.3s;
@@ -320,7 +322,6 @@ nav {
       align-items: center;
       justify-content: space-between;
       margin-bottom: 0.5rem;
-      //transition: all $transition-time ease;
 
       &-details {
         &>* {
@@ -344,6 +345,21 @@ nav {
           transition: all $transition-time ease;
           &:hover {
             color: $items-text-color;
+          }
+        }
+        &-dates {
+          display: block;
+          font-size: $item-language-font-size;
+          color: $items-text-color;
+        }
+        &-company {
+          font-size: $item-title-font-size;
+          color: $items-text-color;
+          margin: 0;
+          border-bottom: $underline-width solid rgba(0, 0, 0, 0);
+          transition: all $transition-time ease;
+          &:hover {
+            border-bottom: $underline-width solid $items-text-color;
           }
         }
       }
