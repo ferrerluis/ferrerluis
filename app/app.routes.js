@@ -20,8 +20,8 @@ app.config(['$routeProvider',
                 templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
                 controller: 'blogController',
                 controllerAs: 'blog'
+            })
+            .otherwise({
+                redirectTo: '/home'
             });
-            // .otherwise({
-            //     redirectTo: '/home'
-            // });
     }])
