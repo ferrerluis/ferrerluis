@@ -7,9 +7,6 @@ app.controller("appController", ['$scope', '$location', function ($scope, $locat
     $scope.shared.year = new Date().getFullYear();
 
     $scope.shared.fullHeightAt = function(routes) {
-        // $log.debug($location.path() === routes[0]);
-        // $log.debug(routes[0]);
-
         if (routes.contains($location.path())) {
             return 'full-height';
         }

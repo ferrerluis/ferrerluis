@@ -11,10 +11,10 @@ app.config(['$routeProvider',
                 controller: 'codingController',
                 controllerAs: 'coding'
             })
-            .when('/design', {
+            .when('/experience', {
                 templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
-                controller: 'designController',
-                controllerAs: 'design'
+                controller: 'experienceController',
+                controllerAs: 'experience'
             })
             .when('/blog', {
                 templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
@@ -24,13 +24,4 @@ app.config(['$routeProvider',
             .otherwise({
                 redirectTo: '/home'
             });
-
-        // $locationProvider.html5Mode(true);
     }])
-
-// app.controller('homeController', function($scope, $log) {
-//
-//     $scope.message = 'This is the home screen';
-//
-//     $log.info("Got to home");
-// });
