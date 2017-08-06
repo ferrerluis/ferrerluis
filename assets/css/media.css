@@ -11,18 +11,12 @@ nav .options .button .big-option {
 nav .options .button .small-option {
   display: none; }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
   nav .logo {
     display: none; }
   nav .logo.mobile {
-    display: inline-block; }
-  nav .options .button .big-option {
-    display: none; }
-  nav .options .button .small-option {
-    display: inline-block; }
-    nav .options .button .small-option.bold {
-      font-weight: 900; } }
-@media screen and (max-width: 650px) {
+    display: inline-block; } }
+@media screen and (max-width: 800px) {
   .app-container {
     padding: 2rem; }
     .app-container footer {
@@ -32,6 +26,12 @@ nav .options .button .small-option {
     width: 3rem;
     padding-right: 0;
     padding-left: 0; }
+  nav .options .button .big-option {
+    display: none; }
+  nav .options .button .small-option {
+    display: inline-block; }
+    nav .options .button .small-option.bold {
+      font-weight: 900; }
 
   .logo.title {
     font-size: 2.5rem;
@@ -87,5 +87,3 @@ nav .options .button .small-option {
   .social .button {
     margin-right: 1rem;
     font-size: 2rem; } }
-
-/*# sourceMappingURL=media.css.map */

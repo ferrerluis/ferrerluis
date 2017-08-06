@@ -1,8 +1,8 @@
 ///////// SCREEN SIZES /////////
 
 $bigger-screen: 1500px;
-$medium-screen: 750px;
-$small-screen: 650px;
+$medium-screen: 950px;
+$small-screen: 800px;
 $smaller-screen: 375px;
 
 ///////// COLORS /////////
@@ -73,20 +73,6 @@ nav {
     .logo.mobile {
       display: inline-block;
     }
-
-    .options .button {
-      .big-option {
-        display: none;
-      }
-      .small-option {
-        display: inline-block;
-
-        &.bold {
-
-          font-weight: 900;
-        }
-      }
-    }
   }
 }
 
@@ -107,6 +93,20 @@ nav {
       width: 3rem;
       padding-right: 0;
       padding-left: 0;
+    }
+
+    .options .button {
+      .big-option {
+        display: none;
+      }
+      .small-option {
+        display: inline-block;
+
+        &.bold {
+
+          font-weight: 900;
+        }
+      }
     }
   }
 

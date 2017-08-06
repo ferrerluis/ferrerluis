@@ -46,7 +46,7 @@ nav {
       padding: 0.5rem 1rem;
       margin-right: 1rem;
       text-align: center;
-      width: 8rem; }
+      width: 12rem; }
       nav .options .button.active {
         color: #FFFFFF; }
         nav .options .button.active.coding {
@@ -219,5 +219,3 @@ footer {
   padding-top: 3rem;
   background-color: #202020;
   color: #FFFFFF; }
-
-/*# sourceMappingURL=style.css.map */
