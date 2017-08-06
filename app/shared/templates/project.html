@@ -1,0 +1,8 @@
+<div class="item-info">
+    <div class="item-info-details">
+        <h2 class="item-info-details-title" style="display: inline-block">{{item.title}}</h2>
+        <p class="item-info-details-language">({{item.language}})</p>
+        <a class="item-info-details-link" ng-repeat="url in item.urls" href="{{url.url}}"><i ng-class="url.icon"></i></a>
+    </div>
+</div>
+<p class="item-description">{{item.description}}</p>

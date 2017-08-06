@@ -5,14 +5,7 @@
     <div class="items-wrapper">
         <div class="items" ng-class="page.bgColor">
             <div class="item" ng-repeat="item in page.items">
-                <div class="item-info">
-                    <div class="item-info-details">
-                        <h2 class="item-info-details-title" style="display: inline-block">{{item.title}}</h2>
-                        <p class="item-info-details-language">({{item.language}})</p>
-                        <a class="item-info-details-link" ng-repeat="url in item.urls" href="{{url.url}}"><i ng-class="url.icon"></i></a>
-                    </div>
-                </div>
-                <p class="item-description">{{item.description}}</p>
+                <div ng-include src="'app/shared/templates/' + page.options.itemName + '.html'"></div>
             </div>
             <div class="empty" ng-show="page.items.empty()">
                 <p>No {{page.options.itemName}}s have been uploaded yet.</p>
