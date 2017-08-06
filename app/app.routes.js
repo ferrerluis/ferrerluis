@@ -9,12 +9,12 @@ app.config(['$routeProvider',
             .when('/coding', {
                 templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
                 controller: 'codingController',
-                controllerAs: 'blog'
+                controllerAs: 'coding'
             })
             .when('/design', {
                 templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
                 controller: 'designController',
-                controllerAs: 'blog'
+                controllerAs: 'design'
             })
             .when('/blog', {
                 templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
