@@ -7,17 +7,17 @@ app.config(['$routeProvider',
                 controllerAs: 'home'
             })
             .when('/coding', {
-                templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
+                templateUrl: 'app/shared/templates/items.html',
                 controller: 'codingController',
                 controllerAs: 'coding'
             })
             .when('/experience', {
-                templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
+                templateUrl: 'app/shared/templates/items.html',
                 controller: 'experienceController',
                 controllerAs: 'experience'
             })
             .when('/blog', {
-                templateUrl: 'app/shared/projectTemplate/projectTemplateView.html',
+                templateUrl: 'app/shared/templates/items.html',
                 controller: 'blogController',
                 controllerAs: 'blog'
             })

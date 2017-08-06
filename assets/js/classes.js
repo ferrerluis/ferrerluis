@@ -14,8 +14,7 @@ var Page = function (title, options) {
     this.bgColor = 'color-' + options.color + '-bg';
     this.color = 'color-' + options.color;
     this.url = options.url;
-    this.projects = [];
-    this.positions = [];
+    this.items = [];
     this.posts = this.projects;
 }
 

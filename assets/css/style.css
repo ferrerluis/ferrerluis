@@ -118,14 +118,14 @@ nav {
     color: #FFFFFF;
     margin-top: 3rem; }
 
-.projects-wrapper {
+.items-wrapper {
   background-color: #EEEEEE;
   min-width: 100vw;
   min-height: 60vh;
   margin: 6rem -3rem 0 -3rem;
   padding-bottom: 4rem; }
 
-.projects {
+.items {
   display: inline-block;
   width: 100vw;
   max-width: 40rem;
@@ -133,36 +133,36 @@ nav {
   margin-top: -5rem;
   text-align: left;
   color: #FFFFFF; }
-  .projects .project {
+  .items .item {
     padding: 1.5rem; }
-    .projects .project a {
+    .items .item a {
       text-decoration: none; }
-    .projects .project-info {
+    .items .item-info {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 0.5rem; }
-      .projects .project-info-details > * {
+      .items .item-info-details > * {
         display: inline-block;
         margin: 0;
         margin-right: 0.5rem; }
-      .projects .project-info-details-title {
+      .items .item-info-details-title {
         font-size: 1.3rem;
         font-family: "Moon";
         font-weight: bold;
         color: #FFFFFF; }
-      .projects .project-info-details-language {
+      .items .item-info-details-language {
         font-size: 1.1rem;
         color: #FFFFFF; }
-      .projects .project-info-details-link {
+      .items .item-info-details-link {
         color: #202020;
         font-size: 1.7rem;
         transition: all 0.3s ease; }
-        .projects .project-info-details-link:hover {
+        .items .item-info-details-link:hover {
           color: #FFFFFF; }
-    .projects .project-description {
+    .items .item-description {
       margin: 0; }
-  .projects .empty {
+  .items .empty {
     padding: 1.5rem;
     text-align: center; }
 
@@ -170,7 +170,7 @@ nav {
   color: #D85750; }
   .color-coding-bg {
     background-color: #D85750; }
-    .color-coding-bg .project:nth-child(even) {
+    .color-coding-bg .item:nth-child(even) {
       background-color: #c64e4b; }
   .color-coding.active {
     color: #c64e4b; }
@@ -180,7 +180,7 @@ nav {
   color: #67ABDE; }
   .color-experience-bg {
     background-color: #67ABDE; }
-    .color-experience-bg .project:nth-child(even) {
+    .color-experience-bg .item:nth-child(even) {
       background-color: #57a9db; }
   .color-experience.active {
     color: #57a9db; }
@@ -190,7 +190,7 @@ nav {
   color: #FCB935; }
   .color-blog-bg {
     background-color: #FCB935; }
-    .color-blog-bg .project:nth-child(even) {
+    .color-blog-bg .item:nth-child(even) {
       background-color: #f7ae28; }
   .color-blog.active {
     color: #f7ae28; }

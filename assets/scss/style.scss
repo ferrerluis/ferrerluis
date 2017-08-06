@@ -5,8 +5,8 @@ $logo-color: #FFFFFF;
 $logo-color-active: #AAAAAA;
 
 $title-color: #FFFFFF;
-$projects-wrapper-bg: #EEEEEE;
-$projects-text-color: #FFFFFF;
+$items-wrapper-bg: #EEEEEE;
+$items-text-color: #FFFFFF;
 
 $nav-text-color: #202020;
 $nav-text-color-active: #FFFFFF;
@@ -45,11 +45,11 @@ $view-height: 100%;
 $button-separation: 1rem;
 $button-internal-padding: 0.5rem 1rem;
 
-$projects-wrapper-margin: 6rem -3rem 0 -3rem;
-$projects-wrapper-padding-bottom: 4rem;
-$project-padding: 1.5rem;
+$items-wrapper-margin: 6rem -3rem 0 -3rem;
+$items-wrapper-padding-bottom: 4rem;
+$item-padding: 1.5rem;
 
-$project-link-icon-size: 1.7rem;
+$item-link-icon-size: 1.7rem;
 
 $footer-padding: ($app-padding * 2) 0 $app-padding 0;
 
@@ -62,11 +62,11 @@ $title-font: "Moon";
 
 $template-title-size: 4rem;
 
-$project-title-font: $title-font;
-$project-title-font-size: 1.3rem;
-$project-title-weight: bold;
+$item-title-font: $title-font;
+$item-title-font-size: 1.3rem;
+$item-title-weight: bold;
 
-$project-language-font-size: $project-title-font-size - 0.2rem;
+$item-language-font-size: $item-title-font-size - 0.2rem;
 
 ///////// TRANSITIONS /////////
 
@@ -287,17 +287,17 @@ nav {
   }
 }
 
-.projects-wrapper {
+.items-wrapper {
 
-  background-color: $projects-wrapper-bg;
+  background-color: $items-wrapper-bg;
   min-width: 100vw;
   min-height: 60vh;
 
-  margin: $projects-wrapper-margin;
-  padding-bottom: $projects-wrapper-padding-bottom;
+  margin: $items-wrapper-margin;
+  padding-bottom: $items-wrapper-padding-bottom;
 }
 
-.projects {
+.items {
   display: inline-block;
   width: 100vw;
   max-width: 40rem;
@@ -306,10 +306,10 @@ nav {
   margin-top: -5rem;
 
   text-align: left;
-  color: $projects-text-color;
+  color: $items-text-color;
 
-  .project {
-    padding: $project-padding;
+  .item {
+    padding: $item-padding;
 
     a {
       text-decoration: none;
@@ -329,21 +329,21 @@ nav {
           margin-right: 0.5rem;
         }
         &-title {
-          font-size: $project-title-font-size;
+          font-size: $item-title-font-size;
           font-family: $title-font;
-          font-weight: $project-title-weight;
+          font-weight: $item-title-weight;
           color: $title-color;
         }
         &-language {
-          font-size: $project-language-font-size;
-          color: $projects-text-color;
+          font-size: $item-language-font-size;
+          color: $items-text-color;
         }
         &-link {
           color: $body-background-color;
-          font-size: $project-link-icon-size;
+          font-size: $item-link-icon-size;
           transition: all $transition-time ease;
           &:hover {
-            color: $projects-text-color;
+            color: $items-text-color;
           }
         }
       }
@@ -355,7 +355,7 @@ nav {
   }
 
   .empty {
-    padding: $project-padding;
+    padding: $item-padding;
     text-align: center;
   }
 }
@@ -367,7 +367,7 @@ nav {
     color: $coding-color;
     &-bg {
       background-color: $coding-color;
-      .project:nth-child(even) {
+      .item:nth-child(even) {
         background-color: $coding-color-active;
       }
     }
@@ -382,7 +382,7 @@ nav {
     color: $experience-color;
     &-bg {
       background-color: $experience-color;
-      .project:nth-child(even) {
+      .item:nth-child(even) {
         background-color: $experience-color-active;
       }
     }
@@ -397,7 +397,7 @@ nav {
     color: $blog-color;
     &-bg {
       background-color: $blog-color;
-      .project:nth-child(even) {
+      .item:nth-child(even) {
         background-color: $blog-color-active;
       }
     }

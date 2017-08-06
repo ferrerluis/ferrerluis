@@ -10,7 +10,7 @@ app.controller('codingController', function($scope, $http, $log) {
     });
 
     Project.all($http, $scope.page, function (projects) {
-        $scope.page.projects = projects.exclude(function (value) {
+        $scope.page.items = projects.exclude(function (value) {
             return value.title === "Blog";
         });
     });

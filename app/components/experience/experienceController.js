@@ -10,6 +10,6 @@ app.controller('experienceController', function($scope, $http, $log) {
     });
 
     Position.all($http, $scope.page, function (positions) {
-        $scope.page.positions = positions;
+        $scope.page.items = positions;
     });
 });
