@@ -9,11 +9,6 @@ app.controller('codingController', function($scope, $http, $log) {
         itemName: 'project'
     });
 
-    $scope.noProjects = function () {
-
-        return $scope.page.projects.length == 0;
-    };
-
     Project.all($http, $scope.page, function (projects) {
         $scope.page.projects = projects.exclude(function (value) {
             return value.title === "Blog";
