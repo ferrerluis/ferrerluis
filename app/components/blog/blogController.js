@@ -10,6 +10,6 @@ app.controller('blogController', function($scope, $log, $http) {
     });
 
     Post.all($http, $scope.page, function (posts) {
-        $scope.page.posts = posts;
+        $scope.page.items = posts;
     });
 });
