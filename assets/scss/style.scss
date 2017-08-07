@@ -28,7 +28,7 @@ $social-button-bg: #FFFFFF;
 $social-button: #AAAAAA;
 $github-color: #161415;
 $linkedin-color: #2C7AB3;
-$twitter-color: #6CADDE;
+$instagram-color: #BC2A8D;
 $email-color: #FFFFFF;
 
 ///////// SIZES /////////
@@ -254,9 +254,9 @@ nav {
       color: $linkedin-color;
     }
 
-    &.twitter:hover {
+    &.instagram:hover {
 
-      color: $twitter-color;
+      color: $instagram-color;
     }
 
     &.email:hover {
