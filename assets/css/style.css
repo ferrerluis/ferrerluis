@@ -52,7 +52,7 @@ nav {
         nav .options .button.active.coding {
           background-color: #D85750; }
         nav .options .button.active.experience {
-          background-color: #67ABDE; }
+          background-color: #6FB4E8; }
         nav .options .button.active.blog {
           background-color: #FCB935; }
     nav .options .button:last-child {
@@ -100,9 +100,9 @@ nav {
     .social .button.github:hover {
       color: #161415; }
     .social .button.linkedin:hover {
-      color: #2c7ab3; }
+      color: #2C7AB3; }
     .social .button.twitter:hover {
-      color: #6cadde; }
+      color: #6CADDE; }
     .social .button.email:hover {
       color: #FFFFFF; }
   .social .button:last-child {
@@ -183,31 +183,31 @@ nav {
   .color-coding-bg {
     background-color: #D85750; }
     .color-coding-bg .item:nth-child(even) {
-      background-color: #c64e4b; }
+      background-color: #C64E4B; }
   .color-coding.active {
-    color: #c64e4b; }
+    color: #C64E4B; }
     .color-coding.active-bg {
-      background-color: #c64e4b; }
+      background-color: #C64E4B; }
 .color-experience {
-  color: #67ABDE; }
+  color: #6FB4E8; }
   .color-experience-bg {
-    background-color: #67ABDE; }
+    background-color: #6FB4E8; }
     .color-experience-bg .item:nth-child(even) {
-      background-color: #57a9db; }
+      background-color: #67ABDE; }
   .color-experience.active {
-    color: #57a9db; }
+    color: #67ABDE; }
     .color-experience.active-bg {
-      background-color: #57a9db; }
+      background-color: #67ABDE; }
 .color-blog {
   color: #FCB935; }
   .color-blog-bg {
     background-color: #FCB935; }
     .color-blog-bg .item:nth-child(even) {
-      background-color: #f7ae28; }
+      background-color: #F7AE28; }
   .color-blog.active {
-    color: #f7ae28; }
+    color: #F7AE28; }
     .color-blog.active-bg {
-      background-color: #f7ae28; }
+      background-color: #F7AE28; }
 
 .button {
   box-sizing: border-box;
@@ -222,7 +222,7 @@ nav {
     .button:hover.coding {
       background-color: #D85750; }
     .button:hover.experience {
-      background-color: #67ABDE; }
+      background-color: #6FB4E8; }
     .button:hover.blog {
       background-color: #FCB935; }
 
