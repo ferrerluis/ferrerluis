@@ -1,8 +1,14 @@
 [
   {
+    "title":"Software Engineering Intern",
+    "company":"Rigor",
+    "dates":"Aug 2017 – Present", 
+    "website":"https://rigor.com"
+  },
+  {
     "title":"Site Reliability Engineering Intern",
     "company":"MailChimp",
-    "dates":"May 2017 – Present",
+    "dates":"May 2017 – Aug 2017",
     "description":null,
     "website":"https://mailchimp.com"
   },
